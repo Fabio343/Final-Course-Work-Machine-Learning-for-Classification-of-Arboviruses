@@ -1,0 +1,1111 @@
+Subject_ID;sexo;gestante;raca;numero_pessoas_nucleo_familiar;ja_teve_dengue;ja_teve_chikungunya;ja_teve_zika;tem_alguma_doenca_das_articulacoes;qual_doenca_das_articulacoes;qual_doenca_das_articulacoes_outra;qual_doenca_das_articulacoes_articulacoes_afetadas;exantema;exantema_onde;exantema_onde_outro;edema;edema_onde;sinais_artrite;sinais_artrite_onde;sinais_artrite_onde_apendicular;outros_sinais_alarme;outros_sinais_alarme_quais;laboratorio_hemograma_hemoglobina;laboratorio_hemograma_hematocrito;laboratorio_hemograma_plaquetas;laboratorio_tgp;laboratorio_tgo
+190166000201;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Não;;122;37;158;54;79
+190166001101;masculino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190166000301;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;10;40;35;102;153
+190166000501;feminino;No;Preta;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12;43;30;101;133
+190166001201;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190166000601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;;;;;
+190168000201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34,5;178000;;
+190166001501;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166001701;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;11,3;33,8;163;;
+190166000901;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;;;;Não;;;;;;
+190166001401;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13;40;80;;
+190166000801;feminino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;37;165;;
+190166001301;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;40,2;151;;
+190166001601;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;12;38;100;;
+190166001801;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168000301;masculino;No;Parda;5;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12;38;137;24;17
+190166001901;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;43;227;14;29
+190170002901;feminino;No;Branca;4;Sim, por diagnóstico do médico;;;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;36;630000;;
+190168000401;feminino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;38;34;69;87
+190169000301;feminino;No;Branca;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;14;41;25000;72;85
+190169000601;feminino;No;Branca;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Sim;"Artrose (""desgaste"")";;JOELHOS;Não;;;Não;;Não;;;Sim;Letargia/irritabilidade/rebaixamento de nível de consciência;11,6;32,9;91000;;
+190166002001;feminino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;9;31;192;;
+190169000101;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;11;33;3200;14;39
+190169000401;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;39,7;39,3;97000;38;72
+190169000201;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - Sinais clínicos ou US de abdome com ascite;15;43;9000;28;71
+190166003501;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;43,8;115;;
+190166001001;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Sim;Artrite reumatoide;;MMII;Não;;;Não;;Não;;;Não;;;;;;
+190169000501;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,2;46,6;103000;39;46
+190168000501;masculino;No;Parda;8;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;37,1;12;21;50
+190166002101;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;127;38,8;283;109;295
+190166002201;feminino;No;Parda;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13,8;38;38000;;
+190168000601;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;41;122000;10;20
+190166002301;masculino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190168000801;feminino;No;Amarela;1;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Não;;;Sem registro;;12,4;37,8;78000;129;66
+190166002401;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169000901;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,2;45;23000;43;104
+190169001001;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,7;39;124000;52;87
+190169000701;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;13,5;38;106000;60;
+190166002601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Sim, por diagnóstico do médico;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190166002501;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;38,3;230;79;88
+190169000801;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;15,5;42;80000;;
+190166002701;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;11,6;35,3;349;;
+190166003201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;13,7;42,3;169;16;21
+190169001701;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,6;39;19000;34;77
+190168000901;feminino;No;Parda;5;Sim, confirmada por exame de sangue do tipo sorologia;;;Não;;;;Não;;;Não;;Não;;;Sem registro;;14;41,3;6200000;85;102
+190166000701;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;88000;;
+190166002901;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;15,7;48,5;185;;
+190168000101;feminino;No;Parda;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;39,2;39000;205;167
+190169001801;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,8;34,9;30000;64;32
+190169001301;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;13,2;38,7;36000;169;285
+190169001401;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;17,1;42,7;29000;47;71
+190168000701;feminino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;38,9;40000;11;15
+190169001501;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;18;50,7;18000;52;79
+190169001601;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;16,3;44,4;7000;537;559
+190166002801;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;14,9;43,2;127;;
+190166003001;feminino;No;Branca;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190168001001;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,9;35,9;4900000;24;41
+190166000101;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;11,4;34,9;192;398;296
+190169002001;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,9;37;33000;39;126
+190166003101;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Sim, por diagnóstico do médico;Não;;;;;;;;;;;;;;12,7;38,1;150;70;126
+190166000401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;12,5;34,9;235;156;129
+190166003301;feminino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Não;;15,2;47,4;38000;69;140
+190166003401;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,3;44,5;27000;34;87
+190166005701;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,2;38,4;31000;73;94
+190169001901;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;15,9;45,9;26000;56;73
+190169002501;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;10,9;31,6;187000;17;23
+190169002101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,6;36,6;77000;89;114
+190169002601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;16,5;48,6;30000;84;134
+190168001201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;43,6;187000;28;24
+190168001101;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,8;47,4;262;17;8
+190166003801;masculino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;39,4;96;;
+190166003701;feminino;No;Preta;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12,1;38,2;56000;121;165
+190169002301;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;7,2;20,3;74000;;
+190166003901;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169002201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,4;40,7;124000;89;100
+190169001201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;10,9;30;23000;;
+190169002401;feminino;No;Parda;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,3;34,2;163000;194;501
+190168001301;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,5;43,5;45000;25;89
+190166003601;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;38,4;162;;
+190168001401;feminino;No;Preta;6;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;11,3;33,6;151000;93;266
+190168001501;feminino;No;Preta;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;40;164000;22;11
+190168001601;masculino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,2;40;132000;76;74
+190168001701;masculino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;44,7;108000;74;47
+190166004001;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190166004101;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190166004201;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Sim, por diagnóstico do médico;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,5;37,9;173;123;67
+190166004301;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12,9;40,4;125000;51;72
+190169002701;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;13,2;38;148000;34;38
+190169002801;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;11,8;33,2;154000;26;13
+190169002901;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Periarticular;Não;;;Sim;Dor à palpação abdominal;11,6;31,7;174000;60;80
+190168002001;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;44,5;40000;0;0
+190166004601;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;41,4;13,6;191;;
+190168002401;feminino;No;Branca;1;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,1;41,5;35000;25;30
+190168002101;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;15;47,1;179000;22;25
+190169003001;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,8;36,6;12000;85;142
+190168002201;masculino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;41,3;77000;90;139
+190166004701;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168001801;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;13,1;42,1;206000;0;0
+190168001901;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,3;36,3;144000;17;22
+190166004801;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;41,6;161;24;23
+190169003101;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14;40,6;268000;108;81
+190166004901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,6;44,8;86;;
+190169003201;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;Sim;Letargia/irritabilidade/rebaixamento de nível de consciência;11;33,1;80000;844;80
+190166004401;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;35,1;12;153;80;
+190168002301;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;48,2;35000;43;73
+190168002501;feminino;No;Branca;6;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,9;37,2;163000;35;53
+190166005001;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166004501;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;37,8;12,3;164;26;40
+190168002601;masculino;No;Branca;7;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;43,7;54000;58;53
+190169003301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,2;41,8;17000;92;122
+190169003601;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm;14,4;41,5;27000;197;299
+190166005301;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;12,2;36;153;;
+190168002701;masculino;No;Parda;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,9;48,7;23000;78;86
+190166005201;feminino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169003801;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);13,9;44,6;29000;112;109
+190168002801;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;37,7;306000;20;20
+190169001101;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;11,6;33,8;226000;9;20
+190166005401;masculino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;44,7;74;;
+190168002901;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;13,2;40,6;201000;14;16
+190169003401;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;14,8;41,4;34000;51;89
+190166005101;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;16,3;49,4;152;33;52
+190169003501;feminino;No;Branca;14;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - Letargia/irritabilidade/rebaixamento de nível de consciência;13,3;39,7;115000;37;31
+190168003101;feminino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;37,3;38000;197;188
+190168003001;feminino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;46,8;30000;27;51
+190169004001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,2;40,5;42000;114;153
+190169003901;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;13,6;38,8;142000;40;56
+190169003701;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;10,7;31;88000;68;57
+190166005501;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166005601;masculino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14;41,1;158;;
+190168003301;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;41,6;36000;30;60
+190168003201;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,5;37,5;183000;33;32
+190168003701;masculino;No;Preta;1;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;42,2;161000;21;17
+190168003401;masculino;No;Branca;5;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;44,7;151000;102;83
+190168003501;feminino;No;Indígena;3;Não que eu saiba;Não que eu saiba;Sim, confirmada por exame de sangue do tipo sorologia;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;39,9;282000;0;0
+190169004301;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;15,2;42,5;48000;;
+190166005801;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;13,4;40,5;60;136;140
+190169005001;masculino;No;Branca;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;16,2;46;24000;296;197
+190169004401;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,2;46;77000;42;63
+190168003601;feminino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;39,1;122000;25;38
+190168003801;feminino;No;Parda;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;11,3;34,6;88000;29;44
+190166006201;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;;;;;
+190169004501;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;12,5;36,1;174000;15;7
+190169004101;masculino;No;Preta;6;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;17,2;46;25000;66;129
+190166006401;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;40,4;125;;
+190169005101;feminino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;15,8;44,4;23000;9;13
+190169005401;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,3;40;19000;42;117
+190166006301;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190169004201;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - Hematócrito > 44% (mulheres) ou 50% (homens);17,6;50,7;8000;537;1225
+190169005201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,4;43,6;15000;72;61
+190166006501;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;36,4;150;;
+190168003901;feminino;No;Branca;5;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;38,9;93000;12;22
+190166006701;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;36,3;250;15;36
+190168004201;feminino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,7;36,5;331000;18;20
+190168004001;feminino;No;Branca;1;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,7;36,3;297000;9;16
+190169006301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;13,8;38,9;222000;135;92
+190169006601;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Não;;15,5;44,8;16000;36;107
+190166006801;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;44,9;38;;
+190169006701;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,8;44,3;18000;;
+190169006901;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;13,3;37,9;14000;148;284
+190169006101;feminino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Outros acometimentos de órgão (encefalite, miocardite, insuficiência respiratória,   etc);14,4;41,7;122000;184;201
+190169005301;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;14,9;41,1;61000;65;105
+190169006801;feminino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;13,2;39,4;46000;55;137
+190169006501;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Não;;14,6;40;80000;;
+190169005601;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Letargia/irritabilidade/rebaixamento de nível de consciência;16;44,1;21000;69;96
+190169007401;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12;34,4;17000;70;132
+190169005501;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,2;45,1;111000;239;153
+190166006901;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169007301;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';10,5;28,9;25000;33;72
+190169007501;masculino;No;Parda;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,3;35,4;32000;121;149
+190169006401;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;15,5;43;13000;156;166
+190168004401;masculino;No;Preta;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;40,5;192000;18;50
+190166007001;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;43,9;178;;
+190166007101;masculino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;14,4;43,3;98;32;40
+190166007501;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170000101;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,5;36,8;36000;;
+190170000201;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,2;40,1;80000;;
+190170000501;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;45,3;71000;;
+190170000301;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;41,6;108000;;
+190166007301;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14;40,5;141;;
+190168004601;feminino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;40,1;320000;14;17
+190168005001;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,4;34,6;120000;20;20
+190168004301;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;46,7;167000;33;26
+190168004501;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;44,4;156000;40;28
+190166007601;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;13,4;39,6;110;;
+190169007601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;16,6;47,5;43000;67;112
+190166007401;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;41,7;163;;
+190168004701;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;40,9;5300;32;28
+190170000601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,2;45;18000;;
+190168004801;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,4;33,4;204000;9;14
+190168004901;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;36,9;11,7;192000;22;22
+190169007001;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;13,5;38,3;266000;19;17
+190170000701;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;61;18,8;;;
+190170000801;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,8;45,1;;;
+190170000901;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;42,6;;;
+190170000401;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,5;42,6;38000;;
+190166007901;feminino;No;Preta;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;38,6;30000;107;112
+190170001201;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,2;41,8;20000;;
+190169007701;feminino;No;Branca;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);12,9;57,7;138000;161;103
+190170001001;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,9;44,2;85000;;
+190170001301;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;42,1;49000;;
+190168005401;feminino;No;Preta;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;40,6;221000;12;15
+190170001701;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;43,9;2150000;;
+190170001601;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;43,6;8900000;;
+190170001501;feminino;No;;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13,4;37,6;6700000;;
+190168005301;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;40,2;228000;28;20
+190168005101;feminino;No;Parda;6;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;13,4;39,8;153000;55;57
+190168005201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;39,4;71000;95;102
+190169008601;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;12,3;39,9;124000;233;263
+190166008001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190169007901;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,6;37,8;162000;;
+190169005901;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,2;44,3;52000;47;135
+190166008201;feminino;No;Amarela;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166008101;masculino;No;Preta;2;Sim, por diagnóstico do médico;;Sim, por diagnóstico do médico;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166008301;feminino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14;39;72;;
+190170001101;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;34,6;98000;;
+190168005501;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;38,8;99000;72;33
+190168005601;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,3;34,9;216000;20;39
+190170002501;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;;;Não;;;Sem registro;;14,4;42;9000;;
+190170002401;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;34,6;93000;;
+190170002001;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;37,1;27000;;
+190169008101;feminino;No;Branca;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;15,6;43,8;19000;315;511
+190170001901;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;39,1;26000;;
+190169007801;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;15,6;45,1;18000;66;105
+190170002201;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;41;21000;;
+190169008201;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);18,7;50,6;24000;43;68
+190169008001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Letargia/irritabilidade/rebaixamento de nível de consciência;12,6;35,4;15000;52;
+190169008401;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,9;44,6;22000;27;72
+190169008801;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,8;41,9;17000;;
+190170002601;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,8;49,9;680000;;
+190169009801;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;14,8;41,2;11000;71;134
+190170002701;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;44,3;7300000;;
+190169008301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,7;44,9;109000;;
+190166008401;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,6;44,7;74000;129;128
+190168005701;masculino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;47,4;136000;12;22
+190169008701;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Hepatomegalia > 2 cm;12,2;35;40000;36;53
+190168005801;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;38,5;192000;17;27
+190166008501;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;12,9;39,3;156;22;34
+190166008601;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;5,3;15,9;156;10;25
+190170002301;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;41,2;90000;;
+190166008901;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;8,5;25,1;28000;;
+190170002801;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,5;48,5;89000;;
+190170003101;feminino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,2;39;84000;;
+190169008501;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;11,7;33,6;38000;;
+190170001401;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);15,6;44,9;74000;;
+190170003501;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,1;46,7;17000;;
+190168006101;feminino;No;Parda;3;Não que eu saiba;Sim, por diagnóstico do médico;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;38,6;241000;16;19
+190169010001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14;37,7;182000;22;35
+190170003601;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);16,1;44,3;33000;;
+190168006001;masculino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;40,2;170000;37;36
+190166009001;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168006201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;40,2;112000;15;24
+190166008801;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;40,7;204;;
+190169009601;masculino;No;Branca;1;;;;;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;11,5;32,1;89000;85;46
+190169008901;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;11,6;30,8;61000;13;14
+190170003401;feminino;No;Preta;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Sim;Edema;;Sem registro;;13,3;37,5;52000;;
+190170003201;masculino;No;Preta;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;45,8;1390000;;
+190170003301;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;41,6;5700000;;
+190170003901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;15,4;41,1;90000;;
+190168006301;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,3;16,3;68000;65;67
+190166009101;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190168006401;masculino;No;Parda;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,4;40,5;146000;17;17
+190170006201;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;15,6;43,9;72000;;
+190170006301;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Edema;;Sim;Dor à palpação abdominal;18,1;49,8;29000;;
+190169009201;feminino;No;Amarela;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Letargia/irritabilidade/rebaixamento de nível de consciência;14,7;42,8;17000;43;65
+190170004001;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,2;38,8;83000;;
+190169009401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13,4;37,9;74000;70;128
+190170004201;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,4;45,9;90000;;
+190170004101;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,8;47,5;43000;;
+190166009201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,9;38;176;;
+190169009301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,4;36,4;250000;48;50
+190166009301;masculino;No;Amarela;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169010601;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;12,6;37,9;134000;21;15
+190170006001;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;36,9;3500000;;
+190169010301;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';14,4;40,6;34000;63;169
+190169009501;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm;14,9;42,9;5000;39;63
+190169010101;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';;31,1;18000;36;81
+190169010401;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;13,5;39,7;37000;49;87
+190170004301;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,2;46,4;4600000;;
+190169010501;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14;39,6;27000;71;111
+190170004501;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,5;47,2;2600000;;
+190170004601;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;39,2;5000000;;
+190170004401;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,8;49,4;6500000;;
+190166009401;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;9,8;29,4;220;;
+190155000101;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;;;;Não;;;;;;
+190168006601;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;12,3;37,8;148000;48;36
+190168006501;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;44;45000;61;42
+190170006601;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Partes moles (distante de articulação);Sim;Edema;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);20,1;55,1;70000;;
+190166009601;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;14,5;194;32;30
+190166009701;masculino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;42,7;162;;
+190170006501;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,5;47,9;66000;;
+190166009501;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,1;43,4;96;;
+190170004701;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);18;50,9;23000;;
+190166009801;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;37,9;312;18;19
+190170006401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Edema;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);19,8;53,1;21000;;
+190170004801;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;42,5;29000;;
+190170005401;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,1;41,6;46000;;
+190166009901;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;12;35,8;113;14;19
+190168006701;feminino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;Não;;;Sem registro;;14,1;41,9;35000;38;67
+190166010001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Sim;Petequial;;Não;;Não;;;Não;;13,7;41,3;45000;;
+190166010601;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Sim;Petequial;;Não;;Não;;;Não;;12,9;39,5;49000;15;20
+190166010701;masculino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;16,3;50,4;25000;46;58
+190170006901;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Sim;"Artrose (""desgaste"") - Artrite reumatoide";;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;15,4;43;85000;;
+190170006701;feminino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Edema;;Sim;Dor à palpação abdominal;15,1;41,7;26000;;
+190166010201;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;38,6;280;;
+190170006801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;;;16;46,2;51000;;
+190168006801;feminino;No;Preta;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,2;42,4;217000;34;50
+190168006901;masculino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;46,4;288000;0;0
+190169009101;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;19,6;31,2;27000;;
+190166010801;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166010301;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169010701;feminino;No;Parda;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);16,1;46,3;15000;90;145
+190170007201;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Sim;Rigidez ou limitação;;Sem registro;;15;42,2;28000__;;
+190169010801;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Articular;Não;;;Não;;15,3;42,4;30000;118;150
+190169009001;feminino;No;Branca;7;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,4;42,2;33000;33;65
+190166010401;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;124;;
+190170005001;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;46,1;16000;;
+190170007101;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Edema;;Sem registro;;13;37,3;83000;;
+190170005101;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;44,2;8800000;;
+190166010501;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;10,2;30,6;179;10;20
+190170010901;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;38;60000;;
+190166010901;feminino;No;Amarela;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,1;33,4;173;14;24
+190170005601;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,5;52,4;5900000;;
+190170007001;masculino;No;Branca;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;41,8;85000;;
+190170005801;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;45,9;4900000;;
+190170005701;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14;41,6;5700000;;
+190170005501;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;39,6;73000;;
+190169011001;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);16,1;45,2;13000;126;264
+190169009701;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Não;;;Sim;Dor à palpação abdominal;13,5;35,5;20000;51;88
+190170010301;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;44,4;6100000;;
+190170007301;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Edema;;Sem registro;;16,4;45,3;45000;;
+190169010901;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal;14,2;38,7;16000;131;499
+190170007701;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;16,4;44,6;13000;;
+190170010401;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;48,5;19000;;
+190169011201;feminino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,6;38,5;34300;40;117
+190170010201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,4;38,5;48000;;
+190170005901;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;45,1;30000;;
+190170011001;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;37,7;93000;;
+190170011101;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;41,7;57000;;
+190170007401;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,7;44,4;88000;;
+190170007501;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;18,1;48,1;32000;;
+190170007801;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;14,4;40,3;85000;;
+190169011301;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;14;39,9;17000;831;1290
+190170007601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;15,2;41,8;71000;;
+190169011501;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;16,2;45,4;41000;61;84
+190169011401;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;10,1;31,3;116000;22;36
+190169011601;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,2;45,4;41000;61;84
+190169011701;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;11,8;33,8;21000;64;281
+190168007001;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;44,2;91000;66;49
+190166011001;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,9;32,7;153;;
+190155000201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Não;;;;;;
+190170010701;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,3;37,1;7900000;;
+190169011901;feminino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12,5;36,7;175000;57;44
+190170011201;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;7800000;;
+190170011401;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,3;47,1;45000;;
+190170010801;feminino;No;Branca;9;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;41,7;3800000;;
+190170010501;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,6;40,2;7800000;;
+190170007901;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;38,9;32000;;
+190166011201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190166012301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168007101;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,4;44,4;45000;84;100
+190169012501;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14;39,5;29000;18;60
+190170011501;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Sim;Artrite reumatoide;;TODAS;Não;;;Não;;Não;;;Sem registro;;13,3;40;54000;;
+190170008001;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,3;48,5;29000;;
+190170011301;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;43,3;68000;;
+190169011801;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,9;42,9;48000;77;99
+190166011401;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166011101;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;38,5;191;26;34
+190169012601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,5;34;65000;;
+190166011601;feminino;No;Amarela;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166011301;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,5;41,6;157;13;15
+190155000301;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;;;;;
+190155000401;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;;;;;
+190168007201;masculino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;Não;;;Sem registro;;12;37,7;30800;36;23
+190170011601;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;40;7700000;;
+190169012301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;12,9;35,9;33000;26;59
+190170011701;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;38,3;4600000;;
+190168007501;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;0;0;0;23;30
+190155000601;feminino;No;Parda;1;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;;;;;
+190166011901;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;16,9;51,3;43000;77;94
+190170011901;masculino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;39,3;84000;;
+190170008101;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,4;48;86000;;
+190168007301;feminino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,6;41,1;13800;40;49
+190170008201;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Sim;Eritema;;Sim;Dor à palpação abdominal;17,8;49,4;88000;;
+190166011701;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,3;34,9;117;13;22
+190166012001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166011801;masculino;No;Parda;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,2;46,5;155;22;26
+190169012701;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;;37,4;59000;22;75
+190166012101;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,8;35,9;164;;
+190170011801;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;41,2;2700000;;
+190168007401;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,6;41,9;233000;29;31
+190170012201;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;39,4;5000000;;
+190155000701;feminino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190170012101;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,9;47,7;5600000;;
+190170012001;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;37,9;7800000;;
+190155000801;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190168007801;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;40;29000;35;53
+190168007701;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;;;;Não;;Não;;;Sem registro;;12,4;37,5;61000;88;123
+190168007601;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;19,5;54;179000;27;12
+190170012501;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;44,1;8000000;;
+190170008701;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Eritema;;Sem registro;;15,2;43,1;58000;;
+190170008601;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Edema - Rigidez ou limitação;;Sim;Dor à palpação abdominal;15,7;42,8;79000;;
+190170008401;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Eritema;;Sem registro;;15,1;43,7;21000;;
+190170012701;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;41,9;8000000;;
+190168007901;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;38,9;188000;13;21
+190170008501;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Sim;Rigidez ou limitação;;Sem registro;;15,1;44,6;89000;;
+190169012101;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);;52,3;9000;109;186
+190170012301;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;46,8;76000;;
+190170012601;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;43,1;6000000;;
+190170012401;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;47,5;55000;;
+190170008901;feminino;No;Branca;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;13,5;38,8;96000;;
+190170009001;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Sim;Edema - Rigidez ou limitação;;Sim;Dor à palpação abdominal;17,2;48,4;94000;;
+190170008801;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;16,5;45,7;61000;;
+190169012201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;;38,1;42000;109;159
+190169012401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;37,2;60000;88;95
+190170012801;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,3;46,9;77000;;
+190170008301;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Eritema;;Sem registro;;14;39;33000;;
+190170013001;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;42,7;7400000;;
+190166012201;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,9;34,4;95;;
+190166012401;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169013201;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;15,1;42,8;16000;137;177
+190169014201;feminino;No;Amarela;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13;37,6;13000;71;230
+190166012501;feminino;No;Branca;1;;;;;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,3;44,6;27;72;153
+190166012601;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,9;47,9;134;;
+190169014001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14;43,2;260000;27;16
+190170009101;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;16,6;46,7;89000;;
+190168008001;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;41,1;252000;19;17
+190166012801;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;44,6;165;;
+190169013901;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;13,7;41,4;34000;106;136
+190169012801;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;14,3;31,4;181000;17;11
+190169013801;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,1;42,8;91000;17;50
+190169013501;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;15,4;45,3;44000;359;348
+190169014301;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13,1;38;197000;123;141
+190169013401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;13,9;41,4;19000;47;112
+190169013601;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,4;43,5;15000;78;181
+190155000901;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;;;;;
+190169013001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);14,5;45,5;11000;136;186
+190169012901;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;;;;;
+190155001001;feminino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190170013901;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,6;33,2;8500000;;
+190170014001;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,4;44,7;7400000;;
+190168008101;feminino;No;Preta;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,3;39,3;189000;26;48
+190155001101;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190155001201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190170014201;feminino;No;Preta;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;39,9;7900000;;
+190168008201;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Sim;Outra;POLIRADICULO NEUROPATIA DESMIELIZANTE INFLAMATORIA CRONICA;;;;;Não;;Não;;;Sem registro;;;;;;
+190170014401;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,9;47,9;35000;;
+190170014301;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;39,7;2500000;;
+190169010201;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;37,1;16000;50;25
+190166013001;feminino;No;Amarela;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;41,2;150;;
+190169013101;masculino;No;Branca;8;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - Letargia/irritabilidade/rebaixamento de nível de consciência - Sinais clínicos ou US de abdome com ascite;;39,8;47000;128;201
+190170009201;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Sim;Rigidez ou limitação;;Sem registro;;14,9;42,8;37000;;
+190170014101;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Sim, por diagnóstico do médico;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;43,9;4800000;;
+190168008301;feminino;No;Parda;9;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;43,8;54000;35;78
+190166013101;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;38,1;266;;
+190166013401;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;35,4;119;;
+190166013301;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;36,6;280;;
+190166013201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,7;35;154;;
+190170012901;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;19,2;55,8;15000;;
+190170014501;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;42,4;89000;;
+190170009301;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);17,3;50,3;56000;;
+190170015001;feminino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;36,7;37000;;
+190170009401;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Sim;"Artrose (""desgaste"")";;JOELHO;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;13,6;40,5;68000;;
+190169013301;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;11,8;41,7;42000;26;39
+190169014501;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;15,1;43,8;13000;25;67
+190168008501;masculino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;16,5;51,2;26000;0;0
+190168008401;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,1;41,3;4900;0;0
+190169014101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;13,3;40;157000;223;235
+190166013501;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169014401;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);17,3;50,3;20000;140;166
+190169014701;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;17,4;50,8;7000;117;95
+190170014801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,7;46,7;3000000;;
+190168008701;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;Não;;;Sem registro;;11,5;37;38000;22;37
+190169013701;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;16,5;47,7;20000;;
+190170009501;masculino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;38,3;84000;;
+190170014701;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;36,3;6200000;;
+190169014601;masculino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,9;41,2;19000;12;126
+190168008801;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;18,6;55,6;172;29;34
+190166013601;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,5;42;157;12;25
+190170014901;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,8;32,4;6600000;;
+190166013701;masculino;No;Parda;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170015101;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;41,4;43000;;
+190170009801;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,1;43;13000;;
+190170009701;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;38,3;77000;;
+190170009601;masculino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,8;38,3;83000;;
+190166013801;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34;158;15;35
+190166013901;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166014001;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170013601;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,8;41,4;39000;;
+190169015701;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - Sinais clínicos ou US de abdome com ascite;;38,1;30000;54;144
+190169015901;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;;39,3;69000;42;32
+190170013401;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;45,8;27000;;
+190169015801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;;;51000;47;150
+190169015501;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);;57,7;10000;26;11
+190169015601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;;36;152000;9;21
+190170010001;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;41,6;8400000;;
+190170009901;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,6;48;3300000;;
+190169015301;feminino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;;39;254000;9;14
+190170013201;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;43,1;7600000;;
+190170013801;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;15,1;43,5;33000;;
+190169015201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;;39,1;9000;34;48
+190170013501;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,1;53;5300000;;
+190169015001;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;47,3;27000;114;43
+190170015901;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Outro;REGIÃO DORSAL;Não;;Não;;;Sem registro;;15,4;44,2;23000;;
+190170013301;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,6;48,5;3700000;;
+190170013701;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,3;42,1;67000;;
+190170016001;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;44;7500000;;
+190168008901;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;36,8;49000;99;156
+190169016801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;15,1;46;19000;51;98
+190168009001;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,8;44;25000;53;62
+190166014101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169016401;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,5;45,4;36000;58;157
+190170015201;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;40,4;79000;;
+190169016701;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,9;41,6;25000;146;120
+190170015501;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;41,3;37000;;
+190166014201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,5;33;60;6200;2539
+190168009101;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,7;36,6;223000;0;0
+190166014401;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;36,9;153;;
+190169016601;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;14,6;47,3;21000;39;59
+190169014801;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;13,4;42,6;29000;56;88
+190169016201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,4;41,9;14000;77;130
+190169016501;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,8;45,2;5000;251;194
+190169015401;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);15,1;46;19000;51;98
+190169016001;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,4;43;38000;37;95
+190170016101;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;46,1;18000;;
+190155001301;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;;;;;
+190166014701;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,4;34,1;45;;
+190166014601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,1;40,7;145;71;69
+190170016401;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,3;44,9;17000;;
+190169016301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,5;48,7;12000;221;137
+190166014801;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12;36,9;203;11;22
+190166014501;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;40,3;164;50;46
+190170016201;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;42,3;78000;;
+190170015301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;;Não;;;;Não;;;Não;;Não;;;Sem registro;;18,7;49,7;25000;;
+190170016601;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;38,9;60000;;
+190170015401;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Articular;Sim;Edema - Rigidez ou limitação;;Sem registro;;16,8;48;82000;;
+190166014901;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166015001;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170016301;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;47,7;41000;;
+190168009201;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;44,1;263000;22;21
+190170016501;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;40,5;65000;;
+190168009301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,2;45,6;74000;145;137
+190166015201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190168009401;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;20,4;59,1;22000;599;572
+190169017001;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;11,7;40,9;38000;113;186
+190170017001;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;37,9;66000;;
+190170016901;feminino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,4;46,7;64000;;
+190170016701;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;42,3;48000;;
+190170016801;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;17,2;49,9;72000;;
+190166015101;masculino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,7;42,9;184;29;37
+190166015301;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,3;39,5;184;;
+190170017301;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;43,6;63000;;
+190155001501;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;;;;;
+190166015401;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168009801;feminino;No;Preta;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;37,9;3300;9;17
+190166015501;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;38,8;224;10;19
+190169018301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular - Periarticular - Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;13,5;39,2;24000;141;221
+190166015601;masculino;No;Amarela;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,5;36,8;230;;
+190169017801;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;14,8;43,7;114000;66;29
+190169018201;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;14,9;45;57000;;
+190168009501;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,9;40,2;135000;27;19
+190170015601;masculino;No;;;;;;;;;;;;;;;;;;;;;;;;
+190168009701;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;36,8;20000;0;0
+190169018001;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';15,3;43,8;18000;214;255
+190170017401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;37,2;87000;;
+190169017901;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;12,4;39,2;275000;;
+190166015701;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;46,1;153;27;32
+190166015801;feminino;No;Amarela;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170018701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;40,5;56000;;
+190168009901;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,4;39,9;159000;15;19
+190170015801;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;46,6;94000;;
+190169018101;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';;37,5;69000;33;79
+190168009601;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;14,8;45,3;57000;109;101
+190169017601;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Periarticular - Partes moles (distante de articulação);Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);;56,4;11000;207;265
+190169017501;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';;35,9;69000;95;102
+190170017201;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;42,5;53000;;
+190169017401;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';;38,4;193000;49;58
+190155001601;feminino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169017101;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular - Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,4;39,9;47000;48;88
+190170017601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);15,9;46;22000;;
+190170017901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sem registro;;15,8;43,7;94000;;
+190170017701;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,5;43,6;75000;;
+190170018101;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;40,8;;;
+190170018601;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;40,8;50000;;
+190170018801;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;40,5;63000;;
+190170017801;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;15,5;43,1;39000;;
+190168010201;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;44,5;39000;95;93
+190168010001;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,6;46,3;191000;0;0
+190170018401;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;42,2;54000;;
+190168010101;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,3;36,5;50000;134;106
+190170018001;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,6;38,6;57000;;
+190169017701;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular - Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal;12,4;36,1;25000;70;114
+190169019101;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;11,8;37,4;246000;16;
+190166015901;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,2;35,7;176;;
+190169018801;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;12,4;44,3;19000;91;
+190169018701;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm;12,4;34,1;120000;74;83
+190169018501;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Partes moles (distante de articulação);Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;14,6;48;37000;121;218
+190170019001;feminino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;14,3;40,9;21000;;
+190169019001;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;12,4;49,2;14000;118;148
+190169018601;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;12,7;39;136000;18;30
+190166016201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,9;31,1;169;20;27
+190166016001;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168010301;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,7;49,8;102000;180;179
+190168010401;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13;41,6;168000;0;0
+190169018401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;12,7;37,3;20000;28;73
+190170019101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,3;36,5;56000;;
+190169017301;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);12,7;51,7;17000;278;328
+190170017501;masculino;No;Branca;6;;;;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;47,8;74000;;
+190169014901;feminino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;12,7;38,6;86000;91;141
+190155001801;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Sim, por diagnóstico do médico;Não;;;;;;;;;;;;;;;;;;
+190166016501;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170018501;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,2;52,6;19000;;
+190170018201;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,3;38;41000;;
+190170018301;masculino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;41,3;44000;;
+190166016301;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,5;36,5;202;21;25
+190168010501;feminino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,7;37,3;202000;25;23
+190166016601;masculino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166017001;feminino;No;Amarela;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,5;38,2;229;13;29
+190166016701;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;37,2;230;;
+190170019301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,7;40,5;33000;;
+190168010601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,9;37,4;179000;0;0
+190168010801;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;44,7;99000;31;17
+190169019501;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Sinais clínicos ou US de abdome com ascite;12,7;37,2;230000;88;80
+190166016801;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169019901;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,2;43,7;44000;67;100
+190169017201;feminino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular - Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - Hematócrito > 44% (mulheres) ou 50% (homens) - Sinais clínicos ou US de abdome com ascite;14,6;46,9;18000;52;
+190169019401;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);14,4;49,1;22000;36;90
+190170019501;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,6;47,8;47000;;
+190169018901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;16,9;48,9;30000;98;116
+190155001901;masculino;No;Parda;8;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190168010701;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;10,7;34,3;108000;31;41
+190170019601;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;40,4;65000;;
+190170019701;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;37,7;48000;;
+190166017101;masculino;No;Amarela;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170019201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,2;44,5;59000;;
+190170019401;masculino;No;Branca;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,1;46,1;29000;;
+190169019601;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,7;42,7;13000;397;588
+190169019801;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite - Outros acometimentos de órgão (encefalite, miocardite, insuficiência respiratória,   etc);13,7;40,6;39000;153;309
+190170019801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;43,1;81000;;
+190169019701;feminino;No;Amarela;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;42,9;57000;177;218
+190169020001;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;40,8;43000;12;56
+190170020801;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,8;41,1;45000;;
+190169020101;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';;52,5;14000;31;70
+190170019901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,2;46,2;88000;;
+190155002001;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Sim;Articular;Sim;Edema - Rigidez ou limitação;;Não;;;;;;
+190166017201;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170020901;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14;40,4;48000;;
+190166017301;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;39,8;145;48;73
+190170020001;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;18,5;49,3;66000;;
+190170020501;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;44,2;80000;;
+190166017401;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170020101;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;13,4;37;66000;;
+190170020601;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;47,9;44000;;
+190155002101;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190170020201;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Não;;;Sem registro;;16,5;44,5;55000;;
+190170020401;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;44,5;88000;;
+190170020301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,1;40,4;98000;;
+190169020701;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sem registro;;14,7;43,3;14000;227;250
+190169020601;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;13,4;42,9;31000;37;85
+190166018801;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170020701;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;39,2;63000;;
+190169020201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hepatomegalia > 2 cm - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;13,3;41,5;18000;;
+190170021001;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,3;33,4;72000;;
+190170021101;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;41,9;45000;;
+190166017501;masculino;No;Preta;8;Sim, por diagnóstico do médico;;;;;;;Não;;;Não;;Não;;;Sem registro;;14,6;43,5;190;28;32
+190170021601;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,9;47,1;46000;;
+190169020901;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);18,6;54,7;15000;244;1320
+190170021701;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Não;;;Sem registro;;13,9;37,7;86000;;
+190168011101;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,3;32,6;56000;43;57
+190169020501;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,7;34,9;174000;24;25
+190168010901;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169020401;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,8;41,2;164000;134;164
+190166017701;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190155001701;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Sim;Petequial;;Não;;Não;;;Não;;;;;;
+190169019301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular - Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;15,6;44,7;281000;9;19
+190169020301;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';15,8;47;13000;134;196
+190155001401;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;;;;;
+190169021001;masculino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Letargia/irritabilidade/rebaixamento de nível de consciência - Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Outros acometimentos de órgão (encefalite, miocardite, insuficiência respiratória,   etc);16,2;50,3;143000;83;86
+190166017801;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190155002301;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;;;
+190166017901;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;37,7;151;;
+190166017601;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,5;35,8;150;;
+190169026301;feminino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;38,2;94000;24;55
+190166018001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,2;42,7;150;;
+190169021801;masculino;No;Preta;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;34,9;13000;16;17
+190168011201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,4;36,6;78000;31;129
+190170021801;masculino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;17,4;46,8;65000;;
+190169020801;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;;4000;;
+190169021701;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Não;;Não;;;Sem registro;;;;;;
+190170021901;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;43,9;83000;;
+190168011401;feminino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;38,7;68000;25;35
+190166018101;masculino;No;Preta;;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169021601;masculino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;7,8;;;;
+190168011301;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;45,2;12,9;160000;21;25
+190170021201;masculino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,1;48,4;97000;;
+190166018301;feminino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;37,4;185;17;40
+190169021501;masculino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;32,4;101000;;
+190169021901;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;41,8;37000;78;104
+190166018401;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,7;31,9;155;;
+190169021401;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Articular - Periarticular - Partes moles (distante de articulação);Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';;41,8;31000;164;194
+190166018601;masculino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;42,3;155;73;63
+190166018501;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,5;38,8;248;11;21
+190170022001;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;17,6;48,1;58000;;
+190169022401;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,8;41,6;27000;53;85
+190169022701;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';16,3;47,6;19000;48;90
+190169022501;masculino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;13,6;42,3;113000;294;339
+190168011701;masculino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,8;41,6;91000;94;115
+190169022601;masculino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sem registro;;15,1;48,1;258000;19;14
+190169023001;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Partes moles (distante de articulação);Não;;;Sem registro;;13,4;39,9;50000;38;87
+190154015101;masculino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;63000;;
+190169022901;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Articular;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';14,3;43,8;13000;78;208
+190169022801;feminino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;12,8;38,6;36000;27;37
+190169022101;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,9;38,4;140000;;
+190170022601;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17;47,9;31000;;
+190155002201;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Periarticular;Não;;;Não;;;;;;
+190170021401;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;39,4;40000;;
+190169023401;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens) - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';17,1;51,7;8000;130;165
+190170022501;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;15,4;43,5;61000;;
+190169021301;masculino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;16;44,8;84000;59;67
+190170022701;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;16,6;46,7;39000;;
+190169023301;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,7;38,6;68000;33;82
+190169023501;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Não;;Não;;;Sem registro;;12;38,1;32000;71;213
+190169023101;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;13;39,6;3000;9;16
+190169023201;feminino;No;Parda;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens) - TGP > 1000 ou icterícia - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';17;49,2;15000;1441;5597
+190168011801;feminino;No;Branca;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;43;94000;17;32
+190166018701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;37,4;395;;
+190170022901;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,8;38,6;58000__;;
+190170023001;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;46,2;47000;;
+190155002401;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190155002601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190170022401;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,5;47,4;64000;;
+190170022201;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,2;35,6;37000;;
+190170022301;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,8;49,3;75000;;
+190170023101;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Não;;14,6;43,6;62000;;
+190166018901;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,1;40,1;119;;
+190170023301;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;45,6;77000;;
+190166019001;feminino;No;Amarela;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;36,9;166;;
+190166019201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166020201;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,1;46,4;107;;
+190166019101;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190154015401;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;91000;;
+190166019301;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170023201;masculino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;44,9;43000;;
+190154015501;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,9;35,6;281000;;
+190166019401;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168012001;masculino;No;Parda;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;42,3;183000;0;0
+190168011901;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;41,6;221000;23;22
+190169024801;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;13,5;49;37000;92;
+190170023501;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,3;49,4;51000;;
+190170023701;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;44,1;47000;;
+190169024701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;40,5;17000;140;289
+190169022201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);13,9;46,5;8000;83;141
+190169024601;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;45,8;23000;169;242
+190169024501;masculino;No;Amarela;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Sinais clínicos ou US de abdome com ascite;;49;37000;92;
+190169022001;feminino;No;Parda;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;42,6;41000;;74
+190169024101;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;41,2;26000;125;126
+190169024001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;41,6;146000;206;155
+190169021201;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sem registro;;15,1;48,3;15000;77;103
+190169023801;masculino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;42,8;17000;98;123
+190169023701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Não;;;Sem registro;;;40;14000;;78
+190169023601;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Articular;Não;;;Sem registro;;15,1;40,4;48000;;
+190169021101;feminino;No;Branca;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Sim;Articular - Periarticular - Partes moles (distante de articulação);Não;;;Sem registro;;6,5;36,6;17000;50;96
+190169022301;masculino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,2;45;55000;20;42
+190154015201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,2;48;201000;14;19
+190170022801;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal;14;38,8;79000;;
+190154015601;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;;;;;;;;;;88000;;
+190169025401;masculino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';17,1;45,9;27000;;
+190169025501;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,1;37,6;128000;;
+190169024401;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Não;;Não;;;Sem registro;;16,3;48,9;32000;;
+190168012201;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,8;12,8;173;18;20
+190170024301;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;46,6;70000;;
+190154015701;masculino;No;Preta;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,8;50,6;188000;;
+190170024101;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;45,3;37000;;
+190168012301;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;44,2;112000;;
+190170023601;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;37,3;74000;;
+190166019501;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,1;42,5;164;;
+190168012401;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;44,4;67000;31;49
+190170024001;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;15,4;42,3;24000;;
+190170023901;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,6;40,4;88000;;
+190170024201;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;36;62000;;
+190166019601;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,5;40,9;186;;
+190154015301;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,3;31;71000;;
+190168012501;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,6;41,5;52000;14;23
+190166019801;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;40,2;178;;
+190166019701;feminino;No;Amarela;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;10,7;32,3;213;21;31
+190168012601;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;9,8;33,1;23000;32;22
+190166019901;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;37,3;150;14;27
+190169023901;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12,9;37,8;31000;47;97
+190154015801;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;66000;;
+190170023801;masculino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,3;42,3;78000;;
+190169019201;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;11,6;34,5;43000;25;61
+190166020001;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169024201;masculino;No;Preta;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,3;45,3;19000;29;60
+190169024901;feminino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,4;41,6;24000;349;360
+190154015901;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;41,2;115000;;
+190169025001;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Não;;16,6;48,5;4000;114;59
+190168012801;masculino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;42,7;188000;0;0
+190169025101;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;12,5;36,8;20000;170;276
+190169025301;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;15,5;43,6;43000;;
+190169025601;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;14,6;41,5;11000;269;289
+190166020301;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169025701;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;20,6;58,7;15000;45;109
+190169025801;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;18;52,1;16000;102;208
+190169026201;feminino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';14,7;43,2;19000;60;149
+190169025901;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;12,6;37,4;61000;;
+190170024501;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;45,6;42000;;
+190169026001;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Sim, por diagnóstico do médico;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,4;45,2;21000;64;150
+190169026101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,4;37,4;32000;88;205
+190166020401;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170024401;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;45;73000;;
+190154016201;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;36;79000;;
+190166020501;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;;;;;
+190154016001;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;38,5;263000;;
+190154016101;feminino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170024801;masculino;No;Branca;8;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;15,8;42,7;46000;;
+190169026601;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);14,8;45,2;21000;62;88
+190169024301;feminino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Periarticular;Não;;;Sem registro;;14,1;40;17000;103;237
+190166020601;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170025801;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;18;48;86000;;
+190166020701;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170024601;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;43,9;43000;;
+190154016401;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;48,2;46000;;
+190170024901;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;43,2;26000;;
+190168011501;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;;;Não;;;Sem registro;;15,7;46,1;37000;96;148
+190154016301;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17;49,9;92000;;
+190154016501;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;29000;;
+190168011601;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;37,8;48000;86;110
+190168011001;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,6;44,5;37000;430;374
+190168012701;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,1;33,3;125000;11;14
+190154016601;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;38,5;58000;;
+190168012901;feminino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,4;37,9;62;147;134
+190168013001;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,6;48,6;540000;41;64
+190166020901;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169026501;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,4;44;14000;29;64
+190169027501;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;40,9;6000;177;281
+190169027601;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34,2;82000;;
+190169026401;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;44;20000;28;56
+190169027401;feminino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,1;38,6;140000;54;47
+190166020801;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166021001;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,7;35,2;150;;
+190170025701;masculino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;36,5;47000;;
+190155002701;masculino;No;Parda;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190170025901;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,4;45,9;59000;;
+190166021101;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;43;156;15;16
+190170026101;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;43,2;59000;;
+190168013201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;39,5;133000;30;29
+190166021201;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;40,3;153;18;24
+190154016801;feminino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;38000;;
+190170026001;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;13,7;38,8;42000;;
+190166021301;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,6;38,7;114;;
+190154016701;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;60000;;
+190168013101;masculino;No;Branca;4;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;44;53000;0;0
+190154017101;feminino;No;Preta;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;;;;Sem registro;;;;67000;;
+190166021401;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166021501;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190154016901;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;39,4;44000;;
+190154017001;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;38000;;
+190169027101;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14;43,9;30000;72;56
+190169028601;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Letargia/irritabilidade/rebaixamento de nível de consciência - Hematócrito > 44% (mulheres) ou 50% (homens);12,8;50,8;146000;79;55
+190169026901;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;46,7;15000;34;80
+190169027001;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - Hepatomegalia > 2 cm - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;16,5;46;13000;130;189
+190169027201;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;17,2;49,2;71000;118;109
+190168013301;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;45,8;190000;0;0
+190169027301;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Sim;Articular - Periarticular - Partes moles (distante de articulação);Não;;;Sem registro;;12,1;35,8;30000;10;19
+190166021601;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168013601;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;43,7;122000;216;204
+190166022201;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13;40,6;230;;
+190168013401;masculino;No;Parda;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;41,4;127000;35;37
+190154017201;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;131000;;
+190169026801;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;10,6;32,7;30000;;
+190166022101;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,9;47,8;79;;
+190169027801;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;15,1;44,4;151000;103;170
+190169028401;masculino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;15,1;44,7;17000;103;170
+190170026201;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;42,8;30000;;
+190168013501;masculino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,8;38,1;49000;30;36
+190166022301;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190154017301;masculino;No;Parda;7;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;88000;;
+190170026301;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;18,1;47,9;81000;;
+190168012101;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;;;Não;;;Sem registro;;11,7;35,7;144000;0;0
+190166022001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169026701;feminino;No;Preta;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;14;39,5;7000;;
+190154017401;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;38000;;
+190169028001;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;13,6;40,4;16000;61;159
+190169028501;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal;16,1;45,8;32000;64;
+190166021901;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190154017901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;40000;;
+190169028701;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;14,4;42,8;16000;216;508
+190166022501;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169028801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;16,9;47;25000;45;85
+190169028901;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;14,1;39,3;23000;;
+190169028201;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15;45,9;17000;66;114
+190169029201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;11,6;32,1;22000;245;335
+190169028301;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sim;Dor à palpação abdominal;14,1;40,6;28000;55;103
+190166021801;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,7;35,7;146;;
+190166021701;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170026401;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,1;40,4;47000;;
+190169028101;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;10,2;28,8;234000;19;22
+190170026501;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,8;45,6;80000;;
+190166022401;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190168013701;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,4;33,2;133000;10;16
+190154017501;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;17;59;100000;;
+190169029501;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,4;45;19000;55;73
+190169027701;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Articular;Não;;;Sim;Dor à palpação abdominal;11,5;33,4;64000;88;121
+190154017601;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;22000;;
+190169029401;masculino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;12,3;35;27000;70;104
+190154017701;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190170024701;feminino;No;Preta;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,1;38,2;68000;;
+190154017801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;46000;;
+190154018001;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;22000;;
+190169027901;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,5;53,7;4000;370;384
+190169030201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,4;39,5;25000;104;
+190155002801;feminino;No;Parda;;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190169029701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens) - TGP > 1000 ou icterícia;15,4;46,2;7000;1027;5759
+190154018101;feminino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;60000;;
+190166022601;feminino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;12,8;39,3;159;201;94
+190168013801;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,1;39,6;179000;54;61
+190170026701;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17;44,4;92000;;
+190154018201;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;100000;;
+190169030101;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;13,7;39,9;30000;;
+190155002901;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190169029001;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;14,1;41,7;27000;75;122
+190169029801;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;TGP > 1000 ou icterícia;13;39,2;19000;1218;2864
+190170026801;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;15,8;41,3;50000;;
+190154018401;feminino;No;Preta;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;50000;;
+190154018301;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;280000;;
+190168013901;feminino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,6;39,1;181000;0;0
+190166022701;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;12,6;38,9;75;;
+190166022801;feminino;No;Amarela;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,8;38,5;180;;
+190154018501;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;92000;;
+190169030701;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;14,5;45,1;40000;325;520
+190168014101;feminino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;10,3;33;234000;0;0
+190169029601;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,5;46,6;39000;59;91
+190168014001;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;44,8;219000;0;0
+190169031101;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,3;48,2;9000;57;126
+190169030001;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Não;;Não;;;Sem registro;;14,8;41,8;16000;72;160
+190170025101;feminino;No;Branca;4;;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;34;84000;;
+190168014201;feminino;No;Parda;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;;;;Não;;Não;;;Sem registro;;13,2;41,1;66000;12;19
+190169030801;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';15,2;43;25000;80;103
+190169030901;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Sim;Partes moles (distante de articulação);Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,6;40,8;36000;;
+190168014301;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,2;41,5;23000;92;106
+190169029901;feminino;No;Indígena;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;12,7;36,9;12000;75;94
+190170025001;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;39,8;67000;;
+190169031001;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,2;49,6;29000;63;
+190169031201;feminino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,2;44,2;38000;;
+190166022901;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;45,7;157;18;36
+190170026901;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,5;43,4;79000;;
+190154018601;masculino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;38000;;
+190166023101;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,6;33,8;221;13;21
+190166023001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;36,9;166;19;32
+190154018701;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,4;46,9;90000;;
+190155003001;feminino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190170025201;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;73;15,8;19000;;
+190166023201;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166023301;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;;;;
+190166023401;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;;;;;
+190166023501;masculino;No;Branca;1;;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169030601;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;42,2;82000;277;
+190170027201;feminino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,8;41,8;43000;;
+190168014401;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12;36,3;246000;0;0
+190169031801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';17;49,2;5000;36;55
+190169030401;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';14,9;44,8;33000;50;109
+190169031701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Sim;Partes moles (distante de articulação);Não;;;Sim;Hepatomegalia > 2 cm - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;14,6;43,4;26000;71;91
+190169031501;masculino;No;Branca;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,3;45,4;18000;44;91
+190170025501;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,5;43,5;9000;;
+190169031401;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';11,1;32,9;25000;24;46
+190169030301;feminino;No;Parda;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;13,9;41,2;16000;15;23
+190169031301;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';17,7;48,7;29000;34;65
+190170025301;masculino;No;Branca;5;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,9;43,9;40000;;
+190155003101;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Não;;;;;;
+190170025401;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,6;47,2;60000;;
+190170027001;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,5;44,6;75000;;
+190170027101;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,8;43,3;71000;;
+190168014501;feminino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,2;37,5;70000;181;184
+190169029301;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,6;41,8;194000;40;84
+190169030501;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;14,5;41,7;63000;249;405
+190169032501;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;47,3;14000;30;59
+190169031901;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);15,5;44,4;15000;;
+190154018901;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;48,4;154000;;
+190169031601;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,1;37,9;25000;56;115
+190169033001;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;46,1;20000;28;52
+190166024001;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,5;44,9;152;;
+190166023601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,4;34,2;304;34;24
+190154019001;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;16,3;51,5;99000;;
+190166023701;feminino;No;Branca;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;11;33;275;37;16
+190166023801;masculino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,7;44,3;222;40;22
+190168014701;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,8;41,2;235000;25;28
+190168014601;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;43,9;32000;37;100
+190170027301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sem registro;;15,3;38;70000;;
+190154018801;feminino;No;Parda;4;Não que eu saiba;Sim, por diagnóstico do médico;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,1;45,6;207000;;
+190166023901;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;13,8;41,1;116;131;146
+190166024201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,2;39,8;150;;
+190166024101;masculino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,2;42,8;183;;
+190169032801;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,5;39,4;13000;42;79
+190169033101;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);14,7;45,8;47000;89;112
+190154019101;feminino;No;Parda;3;;;;;;;;Não;;;Não;;Não;;;Sem registro;;16;49;61000;;
+190154019201;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;57000;;
+190170027401;masculino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,3;43,1;65000;;
+190170028001;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;18,5;47,6;50000;;
+190154019301;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;52,3;192000;;
+190170027701;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;42,4;70000;;
+190154019401;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;;;;Sem registro;;13,8;45;124000;;
+190166024301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190166024401;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,4;39,3;65;;
+190170025601;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,4;43,6;36000;;
+190169032201;feminino;No;Branca;5;Não que eu saiba;Sim, por diagnóstico do médico;Sim, por diagnóstico do médico;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;43,2;33000;389;352
+190169032001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,7;40,3;25000;69;147
+190154019601;feminino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;51000;;
+190168014801;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12;35,2;23000;42;88
+190155003401;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;;;;;;;
+190168014901;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;Não;;Não;;;Sem registro;;11;47,5;60000;17;36
+190170027501;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;42,3;69000;;
+190166024601;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,7;43,3;179;;
+190166024501;feminino;No;Preta;6;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;5,9;18,3;241;;
+190154019701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;59000;;
+190154019501;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;28000;;
+190170027601;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14;41,9;68000;;
+190168015001;masculino;No;Branca;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;38,4;166000;14;25
+190168015101;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,3;42,7;178000;41;52
+190168015201;feminino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,7;40,7;208000;0;0
+190168015301;masculino;No;Parda;6;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,6;44,1;153000;14;16
+190169033201;feminino;No;Parda;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular - Partes moles (distante de articulação);Não;;;Sem registro;;12,6;37,2;27000;177;316
+190166024701;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;14,6;42,2;159;;
+190166024801;feminino;No;;;;;;;;;;;;;;;;;;;;;;;;
+190170027801;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,2;43,9;75000;;
+190170027901;feminino;No;Parda;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;43,9;85000;;
+190170028601;feminino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17;43,6;74000;;
+190154019801;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,5;50;86000;;
+190170028701;feminino;No;Branca;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16;40,2;41000;;
+190154019901;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;175000;;
+190169032301;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,9;48;13000;186;229
+190169032401;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;15,2;44,3;20000;194;506
+190169032601;masculino;No;Branca;2;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';13,7;42,6;41000;57;89
+190169033301;masculino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;14,9;42,5;26000;;
+190169032901;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15;47,3;80000;18;67
+190155003501;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;;;;;
+190168015401;masculino;No;Parda;5;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,7;49,2;33000;76;71
+190155003301;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190166025001;feminino;No;Preta;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular;;Não;;Não;;;Sem registro;;12,9;37,3;220;;
+190155003601;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Não;;;;;;
+190154020001;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;187000;;
+190170028201;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,6;38,5;52000;;
+190154020101;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;;;;Sem registro;;;;190000;;
+190166024901;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;45,2;150;;
+190170028101;masculino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Não;;19,2;47,5;69000;;
+190154020601;masculino;No;Preta;3;Não que eu saiba;;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,9;39,9;42000;;
+190154020201;masculino;No;Preta;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,1;45,2;373000;;
+190154020401;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;;;;;;Não;;;Não;;Não;;;Sem registro;;15;45;205000;;
+190168015501;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;44,2;149000;17;18
+190154020301;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;37000;;
+190170028301;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;19,7;48,9;58000;;
+190154020501;feminino;No;Preta;4;Sim, por diagnóstico do médico;Sim, por diagnóstico do médico;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,1;39;;;
+190166025101;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,3;34,3;295;48;55
+190166025201;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34,7;152;33;22
+190154020801;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,1;38,8;90000;;
+190169033401;feminino;No;Branca;3;Sim, confirmada por exame de sangue do tipo sorologia;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);15,8;46;25000;44;57
+190155003701;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190169033601;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Maculo-papular - Petequial;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';14,8;42,8;26000;119;195
+190169033501;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sem registro;;15,2;43;31000;112;146
+190154020701;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,3;43;56000;;
+190168015601;feminino;No;Branca;20;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,8;40,2;77000;45;31
+190166025301;feminino;No;Branca;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;13,3;40,6;187;18;16
+190166025401;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;;;
+190169032101;masculino;No;Parda;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hematócrito > 44% (mulheres) ou 50% (homens);19,1;54,2;12000;;
+190170028401;feminino;No;Preta;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;16,4;42,4;44000;;
+190169033801;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';15,7;45,8;41000;76;90
+190169033701;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Hepatomegalia > 2 cm - Sinais clínicos ou US de abdome com ascite;16,1;46;20000;18;77
+190166025501;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34,9;215;;
+190170028501;feminino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;18,1;44,8;38000;;
+190168016001;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,5;40,3;31000;156;109
+190170028801;masculino;No;Branca;3;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;17,7;45,2;35000;;
+190166025601;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;12,1;37,6;265;;
+190170028901;masculino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;18;46,4;63000;;
+190154020901;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;;;32000;;
+190154021001;masculino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,9;41,8;98000;26;13
+190155003801;feminino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190166025701;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;35,7;157;;
+190154021101;masculino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;15,1;43,7;63000;;
+190168015701;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;;;;Não;;Não;;;Sem registro;;14,2;42;80000;0;0
+190154021201;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;;;86000;;
+190155003901;feminino;No;Parda;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190155004001;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Sim;Petequial;;Sim;Articular;Não;;;Sem registro;;;;;;
+190166025801;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,4;40,2;175;;
+190168015801;masculino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,2;43,4;33000;0;0
+190168016101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;13,1;40,2;43000;30;75
+190166025901;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34,8;162;;
+190155004101;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190168015901;masculino;No;Preta;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,3;42,8;79000;25;30
+190170029001;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Sim;Rigidez ou limitação;;Sim;Dor à palpação abdominal - Hematócrito > 44% (mulheres) ou 50% (homens);20,1;52,3;22000;;
+190166026001;masculino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,2;40,8;157;;
+190166026101;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;10,3;30,9;155;;
+190168016201;masculino;No;Parda;4;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,7;47,1;25000;48;55
+190154021401;masculino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;15,5;45,3;110000;;
+190154021601;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;;;Não;;;Sem registro;;13,8;38,9;60000;;
+190168016301;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;14,8;44,4;24000;49;60
+190166026201;masculino;No;Branca;;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;11,5;34,7;151;35;39
+190169034801;masculino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal - ! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ' - Sinais clínicos ou US de abdome com ascite;10,2;30,3;9000;74;95
+190168016601;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;12,8;40,1;166000;0;0
+190169034901;feminino;No;Branca;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;! 'Sinais clínicos ou Radiografia de tórax com derrame pleural ';12,7;38,4;65000;105;125
+190169034701;feminino;No;Branca;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sim;Dor à palpação abdominal;15,3;44,5;19000;44;77
+190168016401;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;;;Não;;;Sem registro;;10,3;31;116000;42;33
+190166026501;feminino;No;Branca;4;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;9,2;28,7;159;21;19
+190168016501;masculino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Não;;Não;;;Sem registro;;14,4;44,7;123000;0;0
+190170017101;feminino;No;Branca;2;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;13,2;38,8;680000;;
+190166026301;feminino;No;Preta;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;Não;;;Sem registro;;13,2;40,9;195;;
+190155004501;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190155004201;masculino;No;Parda;1;Sim, por diagnóstico do médico;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190155004301;feminino;No;Parda;1;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190155004401;feminino;No;Parda;2;Não que eu saiba;Não que eu saiba;Sim, confirmada por exame de sangue do tipo sorologia;Não;;;;;;;;;;;;;;;;;;
+190155004601;feminino;No;Parda;3;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;;;;;;;;;;;;;;;
+190155004701;masculino;No;Parda;7;Não que eu saiba;Não que eu saiba;Não que eu saiba;;;;;Não;;;Sim;;;;;Não;;;;;;
+190170015701;masculino;No;Parda;5;Não que eu saiba;Não que eu saiba;Não que eu saiba;Não;;;;Não;;;Não;;;;;Sem registro;;14,6;40,9;61000;;
