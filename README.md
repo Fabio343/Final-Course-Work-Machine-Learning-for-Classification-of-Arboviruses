@@ -1,2 +1,6 @@
 # Projeto-TCC--Machine-Learning-Para-Classifica-o-de-Arborivoses
 O Projeto tem como objetivo o desenvolvimento de um template de Machine Learning em Python, para classificar características que definam os graus de severidade de pacientes com Dengue, se utilizando de dados obtidos de diversas partes de país por meio de um projeto maior (Aborbios vinculado com a FMUSP). O resultado dessa construção será usado para redigir uma monográfia para apresentar ao Departamento de Matemática Aplicada do Instituto de Matemática e Estatística da USP como requisito para conclusão do curso de Bacharelado em  Matemática Aplicada e Computacional com Habilitação em Fisiologia e Biofísica.
+
+
+The Project aims to develop a Machine Learning template in Python, to classify characteristics that define the degrees of severity of patients with Dengue, using data obtained from different parts of the country through a larger project (Aborbios linked with FMUSP). The result of this construction will be used to write a monograph to present to the Department of Applied Mathematics of the Institute of Mathematics and Statistics at USP as a requirement for completing the Bachelor's Degree in Applied and Computational Mathematics with a degree in Physiology and Biophysics.
+
