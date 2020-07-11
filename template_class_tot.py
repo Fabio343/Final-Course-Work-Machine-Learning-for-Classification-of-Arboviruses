@@ -39,13 +39,67 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import classification_report
 from sklearn.ensemble import GradientBoostingClassifier
 import category_encoders as ce   # version 1.2.8
+from sklearn.metrics import roc_auc_score
+from sklearn.linear_model import LogisticRegression
 
 
 
+def category(df_train,df_test,C):
+    df_train_temp=df_train.copy()
+    df_test_temp=df_test.copy()
+
+    for col in C.columns:
+        ordenad_labels=df_train.groupby([col])['fl_severidade'].mean().to_dict()
+        #ordenal_labels={k:i for i,k in enumerate(ordenad_labels,0)}
+
+        df_train_temp[col]=df_train[col].map(ordenad_labels)
+        df_test_temp[col]=df_test[col].map(ordenad_labels)
+ 
+    df_train_temp.drop(['fl_severidade'],axis=1,inplace=True)
+    df_test_temp.drop(['fl_severidade'],axis=1,inplace=True)
+
+    return df_train_temp,df_test_temp 
+
+def category2(amostra_paci,C):
+    df_train_temp=amostra_paci.copy()
+    for col in C.columns:
+        ordenad_labels=amostra_paci.groupby([col])['fl_severidade'].mean().to_dict()
+        df_train_temp[col]=amostra_paci[col].map(ordenad_labels)
+    return df_train_temp
+
+def plot_roc_curve(y_true, y_score, figsize=(10,6)):
+    fpr, tpr,_ = roc_curve(y_true, y_score)
+    plt.figure(figsize=figsize)
+    auc_value = roc_auc_score(y_true, y_score)
+    plt.plot(fpr, tpr, color='orange', label='ROC curve (area = %0.2f)' % auc_value)
+    plt.plot([0, 1], [0, 1], color='darkblue', linestyle='--')
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic (ROC) Curve')
+    plt.legend()
+    plt.show()
+    
+def logistic(x_train,x_test,y_train,y_test,X,fl):
+    logistic=LogisticRegression(random_state=44)
+    logistic.fit(x_train,y_train)
+    pred=logistic.predict_proba(x_train)
+    print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
+    #logistic.fit(x_test,y_test)
+    pred_2=logistic.predict_proba(x_test)
+    print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
+    print(logistic.coef_)
+    print(logistic.predict_proba(X))
+    yhat = logistic.predict_proba(X)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(fl, logistic.predict(X)))
+    print(classification_report(fl, logistic.predict(X)))
+    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
+    plot_roc_curve(fl,yhat)
 ### Definição de paramentros iniciais para o tratamento de dados
 ### Selecionando as informações presentes em arquivos .csv
 ### De modo a cruzar com outros arquivos para unificar,
 ### Em um unico dataframe os dados facilitando na manipulação.
+
 
 dados_analises=pd.read_csv('pt_BR_0_arbobios2-20200309041123_v2.csv',sep=';',error_bad_lines=False)
 dados_analises2=pd.read_csv('questionario_pt_BR_0_CRF_01 Critério de elegibilidade-20200309061346_v2.csv',sep=';',error_bad_lines=False)
@@ -650,10 +704,8 @@ lista_trop=[
 #"laboratorio_hemograma_hemoglobina",
 #"laboratorio_hemograma_hematocrito"
 
-
 for L in lista_trop: 
   base_unificada5.drop(L, axis=1, inplace=True)
-    
 base_unificada5.to_csv('base1.csv')
 
 # processo que usamos para separar variaveis com mais de 1 informação
@@ -687,15 +739,48 @@ base_unificada5['outros_sinais_alarme_quais']=base_unificada5['outros_sinais_ala
 base_dummy5= pd.get_dummies(base_unificada5['outros_sinais_alarme_quais'],prefix='OSAQ')
 base_unificada5=base_unificada5.merge(base_dummy5,left_index=True,right_index=True)
 
-    
+variaveis_dummy_2=[]
+for k in ['dor_articulacao_lado', 'dor_articulacao_local',
+       'dor_articulacao_qtde', 'dor_articulacao_rigidez', 'manchas_pele_cocam',
+       'manchas_pele_cor','manchas_pele_local', 'sangramento',
+       'sangramento_como','sintoma_febre_7dias_artrite',
+       'sintoma_febre_7dias_conjuntivite', 'sintoma_febre_7dias_inchaco',
+       'esteve_hospitalizado_7D', 'esteve_hospitalizado_agravamento_dengue_7D',
+       'esteve_hospitalizado_motivo_7D',
+       'esteve_hospitalizado_14D','esteve_hospitalizado_agravamento_dengue_14D',
+       'esteve_hospitalizado_motivo_14D','edema', 'edema_onde',
+       'exantema', 'exantema_onde', 'ja_teve_chikungunya', 'ja_teve_dengue',
+       'ja_teve_zika','outros_sinais_alarme', 'raca',
+       'sinais_artrite', 'sinais_artrite_onde',
+       'sinais_artrite_onde_apendicular', 'tem_alguma_doenca_das_articulacoes']:
+  base_dummy_novas= pd.get_dummies(base_unificada5[k],prefix=k)
+  base_unificada5=base_unificada5.merge(base_dummy_novas,left_index=True,right_index=True)
+ 
+  for i in base_dummy_novas.columns:
+    variaveis_dummy_2.append(i)
+
 base_unificada5.drop('sinais_alarme_qual', axis=1, inplace=True)
 base_unificada5.drop('sinais_de_alarme_7D', axis=1, inplace=True)
 base_unificada5.drop('sinais_de_alarme_14D', axis=1, inplace=True)
 base_unificada5.drop('sintoma_febre_7dias', axis=1, inplace=True)
 base_unificada5.drop('outros_sinais_alarme_quais', axis=1, inplace=True)
 
+for L in ['dor_articulacao_lado', 'dor_articulacao_local',
+       'dor_articulacao_qtde', 'dor_articulacao_rigidez', 'manchas_pele_cocam',
+       'manchas_pele_cor','manchas_pele_local', 'sangramento',
+       'sangramento_como','sintoma_febre_7dias_artrite',
+       'sintoma_febre_7dias_conjuntivite', 'sintoma_febre_7dias_inchaco',
+       'esteve_hospitalizado_7D', 'esteve_hospitalizado_agravamento_dengue_7D',
+       'esteve_hospitalizado_motivo_7D',
+       'esteve_hospitalizado_14D','esteve_hospitalizado_agravamento_dengue_14D',
+       'esteve_hospitalizado_motivo_14D','edema', 'edema_onde',
+       'exantema', 'exantema_onde', 'ja_teve_chikungunya', 'ja_teve_dengue',
+       'ja_teve_zika','outros_sinais_alarme', 'raca',
+       'sinais_artrite', 'sinais_artrite_onde',
+       'sinais_artrite_onde_apendicular', 'tem_alguma_doenca_das_articulacoes']: 
+  base_unificada5.drop(L, axis=1, inplace=True)
+
 base_unificada5.reset_index()
- 
 base_unificada5.to_csv('base2.csv')
 
 variaveis_dummy=[]
@@ -723,13 +808,12 @@ base_unificada5['tot_sinais_de_alarme']=base_unificada5[variaveis_dummy].sum(axi
 
 base_unificada5['fl_severidade'] = 0
 base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==3.0)] = 1
-base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==2.0)] = 1
+#base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==2.0)] = 1
 
 base_unificada5['fl_sexo'] = 0
 base_unificada5['fl_sexo'][(base_unificada5['sexo']=='feminino')] = 1
 
 import datetime
-
 base_unificada5['DOB']=pd.to_datetime(base_unificada5['DOB'],errors='coerce').replace(np.nan,datetime.datetime.now())
 base_unificada5['febre_7dias_quando']=pd.to_datetime(base_unificada5['febre_7dias_quando'],errors='coerce').replace(np.nan,datetime.datetime.now())
 
@@ -909,33 +993,107 @@ lista_drop_2=[
 "exantema_onde_outro",
 "qual_doenca_das_articulacoes",
 "qual_doenca_das_articulacoes_articulacoes_afetadas",
-"qual_doenca_das_articulacoes_outra"]
+"qual_doenca_das_articulacoes_outra",
+"sinais_alarme"]
 
 for L in lista_drop_2: 
   base_unificada5_filtrada.drop(L, axis=1, inplace=True)
 base_unificada5_filtrada.to_csv('base_sem_encode.csv')
 
+for k in ['laboratorio_hemograma_hematocrito','laboratorio_hemograma_hemoglobina']:
+    base_unificada5_filtrada[k]=base_unificada5_filtrada[k].fillna('0,0')
+
+for k in range(len(base_unificada5_filtrada['laboratorio_hemograma_hemoglobina'])):
+  base_unificada5_filtrada['laboratorio_hemograma_hemoglobina'][k]=float(base_unificada5_filtrada['laboratorio_hemograma_hemoglobina'][k].replace('.','').replace(',','.'))
+
+for k in range(len(base_unificada5_filtrada['laboratorio_hemograma_hematocrito'])):
+  base_unificada5_filtrada['laboratorio_hemograma_hematocrito'][k]=float(base_unificada5_filtrada['laboratorio_hemograma_hematocrito'][k].replace('.','').replace(',','.'))
+
+base_unificada5_filtrada['laboratorio_hemograma_hemoglobina']=base_unificada5_filtrada['laboratorio_hemograma_hemoglobina'].astype('float')
+base_unificada5_filtrada['laboratorio_hemograma_hematocrito']=base_unificada5_filtrada['laboratorio_hemograma_hematocrito'].astype('float')
+
 C=base_unificada5_filtrada.select_dtypes(include=['object'])
 C.to_csv('strings.csv')
-  
-for K in C.columns:
-    ce_target_leaf = ce.TargetEncoder(cols = [K])
-    ce_target_leaf.fit(base_unificada5_filtrada[K], base_unificada5_filtrada['fl_severidade'])
-    base_unificada5_filtrada[K] = ce_target_leaf.transform(base_unificada5_filtrada[K], base_unificada5_filtrada['fl_severidade'])
-    #target_encoder(base_unificada5_filtrada, column=K, target='fl_severidade', method='std')
+C.columns 
+    
+#for k in range(len(C['laboratorio_hemograma_hematocrito'])):
+#  C['laboratorio_hemograma_hematocrito'][k]=float(C['laboratorio_hemograma_hematocrito'][k].replace('.','').replace(',','.'))
+#for K in C.columns
+#    ce_target_leaf = ce.TargetEncoder(cols = [K])
+#    ce_target_leaf.fit(base_unificada5_filtrada[K], base_unificada5_filtrada['fl_severidade'])
+#    base_unificada5_filtrada[K] = ce_target_leaf.transform(base_unificada5_filtrada[K], base_unificada5_filtrada['fl_severidade'])
+#target_encoder(base_unificada5_filtrada, column=K, target='fl_severidade', method='std')
+#x_train_ohe=get_ohe(x_train)
+#x_test_ohe=get_ohe(x_test)
+#category(df_train,df_test)
 
-
+#base_unificada5_filtrada=
+base_unificada5_filtrada[C.columns]=base_unificada5_filtrada[C.columns].fillna('Miss')
 base_unificada5_filtrada=base_unificada5_filtrada.fillna(0.0)   
 base_unificada5_filtrada.to_csv('base_total.csv')
-
 #################################################################
 #LIMPEZA DE VARIAVEIS CONSTANTES
 ##################################################################
-vl_limpa_const=0.1 # variaveis com 70% dos campos repetidos
+#vl_limpa_const=0.1 # variaveis com 70% dos campos repetidos
+#limpa_const = VarianceThreshold(threshold= vl_limpa_const)
+#limpa_const.fit(base_unificada5_filtrada)
+#vars_const = [v for v in base_unificada5_filtrada.columns if v not in  base_unificada5_filtrada.columns[limpa_const.get_support()]]
+#qt_var = len([v for v in base_unificada5_filtrada.columns if v not in  base_unificada5_filtrada.columns[limpa_const.get_support()]])
+ 
+#print('Existem {} variaveis constantes com limite de {}'.format(qt_var,vl_limpa_const))
+#print('Variaveis constantes com limite de {}'.format(vl_limpa_const))
+#print(vars_const)
+#d = {'vars_const': vars_const}
+#df = pd.DataFrame(data=d)
+#df.to_csv('vars_const.csv') 
+ 
+#base_unificada6 = base_unificada5.drop(vars_const, axis = 1)
+#pickle_lista = open("vars_const.pickle","wb")
+#pickle.dump(vars_const, pickle_lista)
+#pickle_lista.close()
+
+#Selecionando amostra para modelagem após os tratamentos 
+#Realizados em todos os dados
+# E separando em treino e teste
+base_para_score=base_unificada5_filtrada.copy()
+#amostra_paci =base_unificada5_filtrada.copy() #.sample(frac=0.7, replace=False)
+amostra_paci=base_unificada5_filtrada[base_unificada5_filtrada['Subject_ID'].isin(ids['Subject_ID'])].reset_index()
+
+amostra_paci_2=amostra_paci.copy()
+amostra_paci_3=amostra_paci.copy()
+amostra_paci.drop('Subject_ID', axis=1, inplace=True)
+amostra_paci.drop('level_0', axis=1, inplace=True)
+
+amostra_paci=category2(amostra_paci,C)
+len(amostra_paci.columns)
+amostra_paci=amostra_paci.fillna(0.0) 
+
+#X_train, X_test = train_test_split(amostra_paci, test_size=0.50)
+x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5,random_state=0)
+test=y_test.sum()
+
+while test<6 or test>9:
+    x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5)
+    #train=X_train['fl_severidade'].sum()
+    test=y_test.sum()
+
+'''colunas_rest=[]
+for k in amostra_paci.columns:
+    if k not in C.columns:
+        colunas_rest.append(k)
+        
+x_train_ohe=get_ohe(x_train,colunas_rest,C.columns)
+x_test_ohe=get_ohe(x_test,colunas_rest,C.columns)'''
+
+#df_train_count,df_test_count=category(x_train,x_test,C)
+#################################################################
+#LIMPEZA DE VARIAVEIS CONSTANTES
+##################################################################
+vl_limpa_const=0.1 # variaveis com 99% dos campos repetidos
 limpa_const = VarianceThreshold(threshold= vl_limpa_const)
-limpa_const.fit(base_unificada5_filtrada)
-vars_const = [v for v in base_unificada5_filtrada.columns if v not in  base_unificada5_filtrada.columns[limpa_const.get_support()]]
-qt_var = len([v for v in base_unificada5_filtrada.columns if v not in  base_unificada5_filtrada.columns[limpa_const.get_support()]])
+limpa_const.fit(amostra_paci)
+vars_const = [v for v in amostra_paci.columns if v not in  amostra_paci.columns[limpa_const.get_support()]]
+qt_var = len([v for v in amostra_paci.columns if v not in  amostra_paci.columns[limpa_const.get_support()]])
  
 print('Existem {} variaveis constantes com limite de {}'.format(qt_var,vl_limpa_const))
 print('Variaveis constantes com limite de {}'.format(vl_limpa_const))
@@ -943,264 +1101,25 @@ print(vars_const)
 d = {'vars_const': vars_const}
 df = pd.DataFrame(data=d)
 df.to_csv('vars_const.csv') 
- 
-#base_unificada6 = base_unificada5.drop(vars_const, axis = 1)
+
+
+#df_train_count2 = df_train_count.drop(vars_const, axis = 1)
+#df_test_count2 = df_test_count.drop(vars_const, axis = 1)
 pickle_lista = open("vars_const.pickle","wb")
 pickle.dump(vars_const, pickle_lista)
 pickle_lista.close()
 
-#Selecionando amostra para modelagem após os tratamentos 
-#Realizados em todos os dados
-# E separando em treino e teste
-
-base_para_score=base_unificada5_filtrada.copy()
-amostra_paci =base_unificada5_filtrada.copy() #.sample(frac=0.7, replace=False)
-#amostra_paci=base_unificada5_filtrada[base_unificada5_filtrada['Subject_ID'].isin(ids['Subject_ID'])].reset_index()
-amostra_paci_2=amostra_paci.copy()
-amostra_paci.drop('Subject_ID', axis=1, inplace=True)
-#amostra_paci.drop('index', axis=1, inplace=True)
-amostra_paci.drop('level_0', axis=1, inplace=True)
-
-corelacao=base_unificada5_filtrada.corr(method ='spearman')
+corelacao=amostra_paci.corr(method ='spearman')
+#corelacao.drop('Index', axis=1, inplace=True)
+from sklearn.metrics import roc_auc_score
 corelacao.to_csv('correlation_dados.csv')
+x_train=x_train.fillna(0) 
+x_test=x_test.fillna(0)
+x_train.drop(['fl_severidade'],axis=1,inplace=True)
+x_test.drop(['fl_severidade'],axis=1,inplace=True)
+fl=amostra_paci['fl_severidade']
+amostra_paci.drop(['fl_severidade'],axis=1,inplace=True) 
+y_train=y_train.fillna(0) 
+y_test=y_test.fillna(0) 
+print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl))
 
-X_train, X_test = train_test_split(amostra_paci, test_size=0.50)
-train=X_train['fl_severidade'].sum()
-test=X_test['fl_severidade'].sum()
-
-while 120<test<150:
-    X_train, X_test = train_test_split(amostra_paci, test_size=0.50)
-    train=X_train['fl_severidade'].sum()
-    test=X_test['fl_severidade'].sum()
-
-    
-#Parametros para aplicação da modelagem (random forest)
-#numero de amostras para uso no cross_validation da seleção de variaveis
-qt_cv = 4
-#numero de amostras para uso no cross_validation do desenvolvimento do modelo
-qt_cv_2 = 5
-
-#parametros para random forest sendo eles
-#quantidade de arvores, profundidade das raizes e jobs
-#100,125,150,200,250,300,325,350,375,
-#400,450,475,500,525,550,575,600
-#175
-tuned_parameters = [{'n_estimators': [250,275,300,325,350,375,400],'max_depth': [4,5,6,7,8,9],'n_jobs':[3,4,5,6]}]
-
-#separando variavel targuet do dataframe para realizar a modelagem
-#tanto para teste quanto para treinamento
-y_train=X_train['fl_severidade'].copy()
-X_train.to_csv('base_train.csv')
-del X_train['fl_severidade']
-X_train=X_train.astype(float)
-
-
-y_test=X_test['fl_severidade'].copy()
-del X_test['fl_severidade']
-X_test=X_test
-
-##################################################################
-#VARIAVEIS CORRELACIONADAS
-##################################################################
-
-corrmat = amostra_paci.corr(method ='spearman')
-corrmat.to_csv('correlation_train_test.csv')
-
-#Aplicação das tecnicas de modelagem apos o tratamento dos dados
-modelo2= GridSearchCV(RandomForestClassifier(), tuned_parameters, cv= qt_cv, scoring='roc_auc')
-modelo2.fit(X_train, y_train)
-
-print('Melhores parametros')
-print(modelo2.best_params_)
-print(modelo2.best_estimator_)
-########
-########
-  
-#Apos realizar a modelagem vemos a metrica como KS (
-#um teste não paramétrico sobre a igualdade de distribuições de probabilidade 
-#contínuas e unidimensionais que pode ser usado para comparar uma amostra com uma
-#distribuição de probabilidade de referência (teste K–S uniamostral) ou duas 
-#amostras uma com a outra (teste K–S biamostral)) e
-#AUC (
-#O AUC representa o grau ou medida de separabilidade. Quanto maior o AUC, 
-#melhor o modelo está em prever 0s como 0s e 1s como 1s.
-#Por exemplo, quanto maior a AUC, melhor o modelo está em distinguir
-#entre pacientes com doença e pacientes sem doença)
-#para verificar como
-#Estar ocorrendo da descrição dos dados.
-
-probs_test = np.round(modelo2.predict_proba(X_test.values)[:,1], 7)
-probs_train = np.round(modelo2.predict_proba(X_train.values)[:,1], 7)
-
-D_test=pd.DataFrame(y_test[:])
-D_test['score']=probs_test
-
-D_train=pd.DataFrame(y_train[:])
-D_train['score']=probs_train
-
-p_c_test=D_test.score[D_test['fl_severidade']==1]
-p_n_test=D_test.score[D_test['fl_severidade']==0]
-p_c_train=D_train.score[D_train['fl_severidade']==1]
-p_n_train=D_train.score[D_train['fl_severidade']==0]
-
-
-fpr_test, tpr_test, thresholds = roc_curve(y_test, probs_test)
-fpr_train, tpr_train, thresholds = roc_curve(y_train, probs_train)
-
-print('KS de Validação: {0:.2f}% e AUC: {1:.2f}%'.format(stats.ks_2samp(p_c_test,p_n_test)[0] * 100.0, auc(fpr_test, tpr_test) * 100))
-print('KS de Desenvolvimento: {0:.2f}% e AUC: {1:.2f}%'.format(stats.ks_2samp(p_c_train,p_n_train)[0] * 100.0, auc(fpr_train, tpr_train) * 100))
-
-feature_importances = pd.DataFrame(modelo2.best_estimator_.feature_importances_, index = X_train.columns,columns=['importance']).sort_values('importance',ascending=False)
-feat_imp_all = feature_importances.sort_values(ascending=True, by='importance')
-graf_all = feat_imp_all.plot(kind = 'barh', color = 'darkred', title='Variaveis', figsize=(15,60), grid = False )
-
-feature_importances.to_csv("poder_variaveis_total.csv")
-graf_all.figure.savefig('poder_variaveis_total_grafico.png')
-
-#Salvando modelo 
-Model_file = 'modelo_random.pkl'
-pickle.dump(modelo2, open(Model_file, 'wb'))
-
-#pickle.dump(modelo2,'modelo_random.pickle')
-#Reprocessamento base inteira e aplico predict_proba na base inteira
-#Determino os 4 grupos mais propensos e verifico se quem está lá condiz com 
-#a caracteristica do tipo (severidade) da doença que esperamos
-
-
-#Remove as variaveis que sabemos não ser uteis para o modelo, mas dessa vez
-#iremos manter o id do panciente para realizar as quebras dos 4 grupos
-variaveis_id2=[]
-for k in amostra_paci_2.columns:
-    if k not in X_train.columns:
-        variaveis_id2.append(k)
-        
-base_ids2=amostra_paci_2[variaveis_id2]  
-   
-for L in variaveis_id2: 
-  amostra_paci_2.drop(L, axis=1, inplace=True)
-
-   
-from math import log
-vetor_probabilidades_amostra=[]
-for k in range(len(amostra_paci_2)):
-  #vetor_probabilidades_amostra.append(int(round(500+(log(1/(1-np.round(modelo2.predict_proba(amostra_paci_2[0:].values)[:,1], 7)[k]))*20/log(2)),0)))
-   vetor_probabilidades_amostra.append(np.round(modelo2.predict_proba(amostra_paci_2[0:].values)[:,1], 7)[k])   
-  
-ve=[]
-for k in vetor_probabilidades_amostra:
- ve.append(k)
-
-amostra_paci_2['Subject_ID']=base_ids2['Subject_ID']
-amostra_paci_2['fl_severidade']=base_ids2['fl_severidade']
-
-df_vetor={'score':ve}
-df_vetor_final=pd.DataFrame(df_vetor,columns=['score'])
-print(df_vetor_final)
-print()
-print(base_unificada5_filtrada)
-print()
-amostra_paci_2['score']=df_vetor_final['score']
-amostra_paci_2=amostra_paci_2.sort_values('score',ascending=False)
-amostra_paci_2.to_csv("base_scorada_amostra.csv")
- 
-import seaborn as sns 
-#sns.boxplot(x=amostra_paci_2['score'])
-#plt.savefig('boxplot_random.png')
-#plt.show()
-plt.plot(amostra_paci_2['score'],'*')
-plt.savefig('distribuicao_random.png')
-plt.show()
-
-'''
-###################  GRADIENT BOOSTING 
-############################################
-########
-from sklearn.ensemble import GradientBoostingClassifier
-tuned_parameters1= {
-    "loss":["deviance","exponential"],
-    "learning_rate": [0.05,0.075],
-    "min_samples_split": np.linspace(0.1, 0.5, 6),
-    "min_samples_leaf": np.linspace(0.1, 0.5, 6),
-    "max_depth":[4,5,6],
-    "max_features":["log2","sqrt"],
-    "criterion": ["friedman_mse","mae"],
-    "subsample":[0.5,0.6,0.7],
-    "n_estimators":[250,300,350]
-    }
-
-modelo3= GridSearchCV(GradientBoostingClassifier(), tuned_parameters1, cv= qt_cv, n_jobs=-1, scoring='roc_auc')
-modelo3.fit(X_train, y_train)
-
-print(modelo3.best_params_)
-probs_test = np.round(modelo3.predict_proba(X_test.values)[:,1], 7)
-probs_train = np.round(modelo3.predict_proba(X_train.values)[:,1], 7)
-
-D_test=pd.DataFrame(y_test[:])
-D_test['score']=probs_test
-
-D_train=pd.DataFrame(y_train[:])
-D_train['score']=probs_train
-
-p_c_test=D_test.score[D_test['fl_severidade']==1]
-p_n_test=D_test.score[D_test['fl_severidade']==0]
-p_c_train=D_train.score[D_train['fl_severidade']==1]
-p_n_train=D_train.score[D_train['fl_severidade']==0]
-
-fpr_test, tpr_test, thresholds = roc_curve(y_test, probs_test)
-fpr_train, tpr_train, thresholds = roc_curve(y_train, probs_train)
-
-print('KS de Validação: {0:.2f}% e AUC: {1:.2f}%'.format(stats.ks_2samp(p_c_test,p_n_test)[0] * 100.0, auc(fpr_test, tpr_test) * 100))
-print('KS de Desenvolvimento: {0:.2f}% e AUC: {1:.2f}%'.format(stats.ks_2samp(p_c_train,p_n_train)[0] * 100.0, auc(fpr_train, tpr_train) * 100))
-
-
-feature_importances = pd.DataFrame(modelo3.best_estimator_.feature_importances_,X_train.columns,columns=['importance']).sort_values('importance',ascending=False)
-print(feature_importances.count())
-print(modelo3.best_estimator_.feature_importances_)
-
-
-feat_imp_all = feature_importances.sort_values(ascending=True, by='importance')
-graf_all = feat_imp_all.plot(kind = 'barh', color = 'darkred', title='Variaveis', figsize=(15,60), grid = False )
-
-feature_importances.to_csv("poder_variaveis_total_gradient.csv")
-graf_all.figure.savefig('poder_variaveis_total_grafico_gradient.png')
-
-
-variaveis_id3=[]
-for k in amostra_paci_3.columns:
-    if k not in X_train.columns:
-        variaveis_id3.append(k)
-        
-base_ids3=amostra_paci_3[variaveis_id3]  
-   
-for L in variaveis_id3: 
-  amostra_paci_3.drop(L, axis=1, inplace=True)
-
-   
-from math import log
-vetor_probabilidades_amostra=[]
-for k in range(len(amostra_paci_3)):
-   #vetor_probabilidades_amostra.append(int(round(500+(log(1/(1-np.round(modelo2.predict_proba(amostra_paci_2[0:].values)[:,1], 7)[k]))*20/log(2)),0)))
-   vetor_probabilidades_amostra.append(np.round(modelo3.predict_proba(amostra_paci_3[0:].values)[:,1], 7)[k])   
-  
-ve=[]
-for k in vetor_probabilidades_amostra:
- ve.append(k)
-
-amostra_paci_3['Subject_ID']=base_ids3['Subject_ID']
-amostra_paci_3['fl_severidade']=base_ids3['fl_severidade']
-
-df_vetor={'score':ve}
-df_vetor_final=pd.DataFrame(df_vetor,columns=['score'])
-print(df_vetor_final)
-print()
-amostra_paci_3['score']=df_vetor_final['score']
-amostra_paci_3=amostra_paci_3.sort_values('score',ascending=False)
-amostra_paci_3.to_csv("base_scorada_amostra_gradiente.csv") 
-
-import seaborn as sns 
-plt.plot(amostra_paci_3['score'],'*')
-plt.savefig('distribuicao_gradiente.png')
-plt.show()
-sns.boxplot(x=amostra_paci_3['score'])
-plt.savefig('boxplot_gradient.png')
-plt.show()'''
