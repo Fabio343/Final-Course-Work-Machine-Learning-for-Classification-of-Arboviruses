@@ -41,6 +41,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 import category_encoders as ce   # version 1.2.8
 from sklearn.metrics import roc_auc_score
 from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import ComplementNB
 
 
 
@@ -79,12 +80,15 @@ def plot_roc_curve(y_true, y_score, figsize=(10,6)):
     plt.legend()
     plt.show()
     
-def logistic(x_train,x_test,y_train,y_test,X,fl):
+def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2):
     logistic=LogisticRegression(random_state=44)
     logistic.fit(x_train,y_train)
     pred=logistic.predict_proba(x_train)
+    amostra_=logistic.predict_proba(amostra_paci2)
+    amostra_paci2['probls']=0
+    amostra_paci2['probls']=amostra_
+    amostra_paci2.to_csv('modelo_logistic.csv')
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
-    #logistic.fit(x_test,y_test)
     pred_2=logistic.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
     print(logistic.coef_)
@@ -95,6 +99,26 @@ def logistic(x_train,x_test,y_train,y_test,X,fl):
     print(classification_report(fl, logistic.predict(X)))
     print('AUC: %0.2f' % roc_auc_score(fl,yhat))
     plot_roc_curve(fl,yhat)
+
+def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3):
+    Complement=ComplementNB()
+    Complement.fit(x_train,y_train)
+    pred=Complement.predict_proba(x_train)
+    amostra_=Complement.predict_proba(amostra_paci3)
+    amostra_paci3['probls']=0
+    amostra_paci3['probls']=amostra_
+    amostra_paci3.to_csv('modelo_complement_bayes.csv')
+    print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
+    pred_2=Complement.predict_proba(x_test)
+    print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
+    print(Complement.predict_proba(X))
+    yhat = Complement.predict_proba(X)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(fl, Complement.predict(X)))
+    print(classification_report(fl, Complement.predict(X)))
+    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
+    plot_roc_curve(fl,yhat)
+
 ### Definição de paramentros iniciais para o tratamento de dados
 ### Selecionando as informações presentes em arquivos .csv
 ### De modo a cruzar com outros arquivos para unificar,
@@ -1059,8 +1083,8 @@ base_para_score=base_unificada5_filtrada.copy()
 #amostra_paci =base_unificada5_filtrada.copy() #.sample(frac=0.7, replace=False)
 amostra_paci=base_unificada5_filtrada[base_unificada5_filtrada['Subject_ID'].isin(ids['Subject_ID'])].reset_index()
 
-amostra_paci_2=amostra_paci.copy()
-amostra_paci_3=amostra_paci.copy()
+amostra_paci_21=amostra_paci.copy()
+amostra_paci_31=amostra_paci.copy()
 amostra_paci.drop('Subject_ID', axis=1, inplace=True)
 amostra_paci.drop('level_0', axis=1, inplace=True)
 
@@ -1109,6 +1133,9 @@ pickle_lista = open("vars_const.pickle","wb")
 pickle.dump(vars_const, pickle_lista)
 pickle_lista.close()
 
+amostra_paci2=amostra_paci.copy()
+amostra_paci3=amostra_paci.copy()
+
 corelacao=amostra_paci.corr(method ='spearman')
 #corelacao.drop('Index', axis=1, inplace=True)
 from sklearn.metrics import roc_auc_score
@@ -1119,7 +1146,12 @@ x_train.drop(['fl_severidade'],axis=1,inplace=True)
 x_test.drop(['fl_severidade'],axis=1,inplace=True)
 fl=amostra_paci['fl_severidade']
 amostra_paci.drop(['fl_severidade'],axis=1,inplace=True) 
+amostra_paci2.drop(['fl_severidade'],axis=1,inplace=True) 
+amostra_paci3.drop(['fl_severidade'],axis=1,inplace=True) 
 y_train=y_train.fillna(0) 
 y_test=y_test.fillna(0) 
-print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl))
-
+print('Modelo Logistica')
+print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci2))
+print('')
+print('Modelo Bayes Complement')
+print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci3))
