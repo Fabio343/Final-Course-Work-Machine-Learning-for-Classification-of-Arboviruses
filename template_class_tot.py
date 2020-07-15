@@ -80,6 +80,14 @@ def plot_roc_curve(y_true, y_score, figsize=(10,6)):
     plt.legend()
     plt.show()
     
+def var_drop(df,colum):
+  colunas=[]
+  for k in colum:
+     if df[k].sum()<=60:
+       colunas.append(k)
+  return colunas  
+
+
 def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2):
     logistic=LogisticRegression(random_state=44)
     logistic.fit(x_train,y_train)
@@ -99,6 +107,8 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2):
     print(classification_report(fl, logistic.predict(X)))
     print('AUC: %0.2f' % roc_auc_score(fl,yhat))
     plot_roc_curve(fl,yhat)
+#esteve_hospitalizado_quantos_dias_7D,esteve_hospitalizado_quantos_dias_14D,laboratorio_hemograma_hematocrito,laboratorio_hemograma_hemoglobina
+#tot_sinais_de_alarme,fl_sexo,idade
 
 def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3):
     Complement=ComplementNB()
@@ -782,7 +792,7 @@ for k in ['dor_articulacao_lado', 'dor_articulacao_local',
  
   for i in base_dummy_novas.columns:
     variaveis_dummy_2.append(i)
-
+    
 base_unificada5.drop('sinais_alarme_qual', axis=1, inplace=True)
 base_unificada5.drop('sinais_de_alarme_7D', axis=1, inplace=True)
 base_unificada5.drop('sinais_de_alarme_14D', axis=1, inplace=True)
@@ -832,8 +842,6 @@ base_unificada5['tot_sinais_de_alarme']=base_unificada5[variaveis_dummy].sum(axi
 
 base_unificada5['fl_severidade'] = 0
 base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==3.0)] = 1
-#base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==2.0)] = 1
-
 base_unificada5['fl_sexo'] = 0
 base_unificada5['fl_sexo'][(base_unificada5['sexo']=='feminino')] = 1
 
@@ -1024,6 +1032,16 @@ for L in lista_drop_2:
   base_unificada5_filtrada.drop(L, axis=1, inplace=True)
 base_unificada5_filtrada.to_csv('base_sem_encode.csv')
 
+
+corelacao=base_unificada5_filtrada.corr(method ='spearman')['fl_severidade']
+corelacao.to_csv('correlation_dados_tarq.csv')
+
+lista_varia=var_drop(base_unificada5_filtrada,variaveis_dummy_2)
+len(lista_varia)
+for k in lista_varia:
+    base_unificada5_filtrada.drop(k,axis=1,inplace=True)
+
+
 for k in ['laboratorio_hemograma_hematocrito','laboratorio_hemograma_hemoglobina']:
     base_unificada5_filtrada[k]=base_unificada5_filtrada[k].fillna('0,0')
 
@@ -1039,42 +1057,10 @@ base_unificada5_filtrada['laboratorio_hemograma_hematocrito']=base_unificada5_fi
 C=base_unificada5_filtrada.select_dtypes(include=['object'])
 C.to_csv('strings.csv')
 C.columns 
-    
-#for k in range(len(C['laboratorio_hemograma_hematocrito'])):
-#  C['laboratorio_hemograma_hematocrito'][k]=float(C['laboratorio_hemograma_hematocrito'][k].replace('.','').replace(',','.'))
-#for K in C.columns
-#    ce_target_leaf = ce.TargetEncoder(cols = [K])
-#    ce_target_leaf.fit(base_unificada5_filtrada[K], base_unificada5_filtrada['fl_severidade'])
-#    base_unificada5_filtrada[K] = ce_target_leaf.transform(base_unificada5_filtrada[K], base_unificada5_filtrada['fl_severidade'])
-#target_encoder(base_unificada5_filtrada, column=K, target='fl_severidade', method='std')
-#x_train_ohe=get_ohe(x_train)
-#x_test_ohe=get_ohe(x_test)
-#category(df_train,df_test)
 
-#base_unificada5_filtrada=
 base_unificada5_filtrada[C.columns]=base_unificada5_filtrada[C.columns].fillna('Miss')
 base_unificada5_filtrada=base_unificada5_filtrada.fillna(0.0)   
 base_unificada5_filtrada.to_csv('base_total.csv')
-#################################################################
-#LIMPEZA DE VARIAVEIS CONSTANTES
-##################################################################
-#vl_limpa_const=0.1 # variaveis com 70% dos campos repetidos
-#limpa_const = VarianceThreshold(threshold= vl_limpa_const)
-#limpa_const.fit(base_unificada5_filtrada)
-#vars_const = [v for v in base_unificada5_filtrada.columns if v not in  base_unificada5_filtrada.columns[limpa_const.get_support()]]
-#qt_var = len([v for v in base_unificada5_filtrada.columns if v not in  base_unificada5_filtrada.columns[limpa_const.get_support()]])
- 
-#print('Existem {} variaveis constantes com limite de {}'.format(qt_var,vl_limpa_const))
-#print('Variaveis constantes com limite de {}'.format(vl_limpa_const))
-#print(vars_const)
-#d = {'vars_const': vars_const}
-#df = pd.DataFrame(data=d)
-#df.to_csv('vars_const.csv') 
- 
-#base_unificada6 = base_unificada5.drop(vars_const, axis = 1)
-#pickle_lista = open("vars_const.pickle","wb")
-#pickle.dump(vars_const, pickle_lista)
-#pickle_lista.close()
 
 #Selecionando amostra para modelagem após os tratamentos 
 #Realizados em todos os dados
@@ -1092,24 +1078,13 @@ amostra_paci=category2(amostra_paci,C)
 len(amostra_paci.columns)
 amostra_paci=amostra_paci.fillna(0.0) 
 
-#X_train, X_test = train_test_split(amostra_paci, test_size=0.50)
 x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5,random_state=0)
 test=y_test.sum()
 
 while test<6 or test>9:
     x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5)
-    #train=X_train['fl_severidade'].sum()
     test=y_test.sum()
 
-'''colunas_rest=[]
-for k in amostra_paci.columns:
-    if k not in C.columns:
-        colunas_rest.append(k)
-        
-x_train_ohe=get_ohe(x_train,colunas_rest,C.columns)
-x_test_ohe=get_ohe(x_test,colunas_rest,C.columns)'''
-
-#df_train_count,df_test_count=category(x_train,x_test,C)
 #################################################################
 #LIMPEZA DE VARIAVEIS CONSTANTES
 ##################################################################
@@ -1126,9 +1101,6 @@ d = {'vars_const': vars_const}
 df = pd.DataFrame(data=d)
 df.to_csv('vars_const.csv') 
 
-
-#df_train_count2 = df_train_count.drop(vars_const, axis = 1)
-#df_test_count2 = df_test_count.drop(vars_const, axis = 1)
 pickle_lista = open("vars_const.pickle","wb")
 pickle.dump(vars_const, pickle_lista)
 pickle_lista.close()
@@ -1137,7 +1109,6 @@ amostra_paci2=amostra_paci.copy()
 amostra_paci3=amostra_paci.copy()
 
 corelacao=amostra_paci.corr(method ='spearman')
-#corelacao.drop('Index', axis=1, inplace=True)
 from sklearn.metrics import roc_auc_score
 corelacao.to_csv('correlation_dados.csv')
 x_train=x_train.fillna(0) 
