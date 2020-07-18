@@ -42,6 +42,8 @@ import category_encoders as ce   # version 1.2.8
 from sklearn.metrics import roc_auc_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import ComplementNB
+from sklearn.feature_selection import RFE
+from sklearn.decomposition import PCA
 
 
 
@@ -83,7 +85,7 @@ def plot_roc_curve(y_true, y_score, figsize=(10,6)):
 def var_drop(df,colum):
   colunas=[]
   for k in colum:
-     if df[k].sum()<=60:
+     if df[k].sum()<=18:
        colunas.append(k)
   return colunas  
 
@@ -99,8 +101,8 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2):
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=logistic.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
-    print(logistic.coef_)
-    print(logistic.predict_proba(X))
+    #print(logistic.coef_)
+    #print(logistic.predict_proba(X))
     yhat = logistic.predict_proba(X)
     yhat = yhat[:, 1] 
     print(pd.crosstab(fl, logistic.predict(X)))
@@ -121,19 +123,17 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3):
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=Complement.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
-    print(Complement.predict_proba(X))
+    #print(Complement.predict_proba(X))
     yhat = Complement.predict_proba(X)
     yhat = yhat[:, 1] 
     print(pd.crosstab(fl, Complement.predict(X)))
     print(classification_report(fl, Complement.predict(X)))
     print('AUC: %0.2f' % roc_auc_score(fl,yhat))
     plot_roc_curve(fl,yhat)
-
 ### Definição de paramentros iniciais para o tratamento de dados
 ### Selecionando as informações presentes em arquivos .csv
 ### De modo a cruzar com outros arquivos para unificar,
 ### Em um unico dataframe os dados facilitando na manipulação.
-
 
 dados_analises=pd.read_csv('pt_BR_0_arbobios2-20200309041123_v2.csv',sep=';',error_bad_lines=False)
 dados_analises2=pd.read_csv('questionario_pt_BR_0_CRF_01 Critério de elegibilidade-20200309061346_v2.csv',sep=';',error_bad_lines=False)
@@ -1078,6 +1078,43 @@ amostra_paci=category2(amostra_paci,C)
 len(amostra_paci.columns)
 amostra_paci=amostra_paci.fillna(0.0) 
 
+variaveis_features=[]
+for k in amostra_paci.columns:
+ if k!='fl_severidade':
+     variaveis_features.append(k)
+
+X = amostra_paci[variaveis_features].values
+Y = amostra_paci['fl_severidade'].values
+# feature extraction
+model = LogisticRegression()
+rfe = RFE(model, 30)
+fit = rfe.fit(X, Y)
+print("Numero de  Features: %d" % fit.n_features_)
+print("Features selecionadas: %s" % fit.support_)
+print("Feature Ranking: %s" % fit.ranking_)
+print('')
+
+len(fit.ranking_)
+len(variaveis_features)
+drops_feature=[]
+for k in range(len(fit.ranking_)):
+   if  fit.ranking_[k] !=1:
+       drops_feature.append(variaveis_features[k])
+len(drops_feature) 
+for k in variaveis_features:
+    if k not in drops_feature:
+        print(k)
+        
+for L in drops_feature: 
+  amostra_paci.drop(L, axis=1, inplace=True)
+        
+       #variaveis_features
+#pca = PCA(n_components=30)
+#fit = pca.fit(X)
+# summarize components
+#print("Explained Variance: %s" % fit.explained_variance_ratio_)
+#print(fit.components_)
+#print('')
 x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5,random_state=0)
 test=y_test.sum()
 
@@ -1100,7 +1137,7 @@ print(vars_const)
 d = {'vars_const': vars_const}
 df = pd.DataFrame(data=d)
 df.to_csv('vars_const.csv') 
-
+print('')
 pickle_lista = open("vars_const.pickle","wb")
 pickle.dump(vars_const, pickle_lista)
 pickle_lista.close()
@@ -1126,3 +1163,23 @@ print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci2))
 print('')
 print('Modelo Bayes Complement')
 print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci3))
+
+'''
+from pandas import read_csv
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LogisticRegression
+# load data
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv"
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(url, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+# feature extraction
+model = LogisticRegression(solver='lbfgs')
+rfe = RFE(model, 3)
+fit = rfe.fit(X, Y)
+print("Num Features: %d" % fit.n_features_)
+print("Selected Features: %s" % fit.support_)
+print("Feature Ranking: %s" % fit.ranking_)
+'''
