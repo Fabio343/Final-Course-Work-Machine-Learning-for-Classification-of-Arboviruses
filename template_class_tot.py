@@ -21,6 +21,8 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier,export_graphviz
+from sklearn import metrics
 from sklearn.metrics import roc_curve, auc
 from sklearn.metrics import confusion_matrix
 from sklearn.ensemble import RandomForestRegressor
@@ -44,6 +46,14 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import ComplementNB
 from sklearn.feature_selection import RFE
 from sklearn.decomposition import PCA
+from ipywidgets import interactive
+from IPython.display import SVG,display
+from graphviz import Source
+import pydot
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
+import pydot
+import graphviz
+from sklearn import tree
 
 
 
@@ -1144,6 +1154,7 @@ pickle_lista.close()
 
 amostra_paci2=amostra_paci.copy()
 amostra_paci3=amostra_paci.copy()
+amostra_paci4=amostra_paci.copy()
 
 corelacao=amostra_paci.corr(method ='spearman')
 from sklearn.metrics import roc_auc_score
@@ -1164,22 +1175,19 @@ print('')
 print('Modelo Bayes Complement')
 print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci3))
 
-'''
-from pandas import read_csv
-from sklearn.feature_selection import RFE
-from sklearn.linear_model import LogisticRegression
-# load data
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv"
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
-dataframe = read_csv(url, names=names)
-array = dataframe.values
-X = array[:,0:8]
-Y = array[:,8]
-# feature extraction
-model = LogisticRegression(solver='lbfgs')
-rfe = RFE(model, 3)
-fit = rfe.fit(X, Y)
-print("Num Features: %d" % fit.n_features_)
-print("Selected Features: %s" % fit.support_)
-print("Feature Ranking: %s" % fit.ranking_)
-'''
+
+arvore = DecisionTreeClassifier()
+# Treinando o modelo de arvore de decisão:
+arvore_treinada = arvore.fit(x_train,y_train)
+for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
+    print("{}:{}".format(feature, importancia))
+resultado = arvore_treinada.predict(x_test)
+print(metrics.classification_report(y_test,resultado))
+tree.plot_tree(arvore_treinada) 
+
+fig = plt.figure(figsize=(45,40))
+tree.plot_tree(arvore_treinada, 
+                   feature_names=x_train.columns,  
+                   class_names='fl_severidade',
+                   filled=True)
+fig.savefig("decistion_tree.png")
