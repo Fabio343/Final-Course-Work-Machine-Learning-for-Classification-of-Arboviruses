@@ -80,17 +80,19 @@ def category2(amostra_paci,C):
         df_train_temp[col]=amostra_paci[col].map(ordenad_labels)
     return df_train_temp
 
-def plot_roc_curve(y_true, y_score, figsize=(10,6)):
+def plot_roc_curve(y_true, y_score,nome,figsize=(10,6)):
     fpr, tpr,_ = roc_curve(y_true, y_score)
     plt.figure(figsize=figsize)
     auc_value = roc_auc_score(y_true, y_score)
+    fig = plt.figure(figsize=(25,25))
     plt.plot(fpr, tpr, color='orange', label='ROC curve (area = %0.2f)' % auc_value)
     plt.plot([0, 1], [0, 1], color='darkblue', linestyle='--')
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
     plt.title('Receiver Operating Characteristic (ROC) Curve')
     plt.legend()
-    plt.show()
+    fig.savefig("roc_curve_"+nome+".png")
+    #plt.show()
     
 def var_drop(df,colum):
   colunas=[]
@@ -99,14 +101,17 @@ def var_drop(df,colum):
        colunas.append(k)
   return colunas  
 
-
-def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2):
+def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     logistic=LogisticRegression(random_state=44)
     logistic.fit(x_train,y_train)
     pred=logistic.predict_proba(x_train)
     amostra_=logistic.predict_proba(amostra_paci2)
+    amostra_2=logistic.predict(amostra_paci2)
+    amostra_paci2['result']=0
     amostra_paci2['probls']=0
     amostra_paci2['probls']=amostra_
+    amostra_paci2['result']=amostra_2
+    amostra_paci2['fl_severidade']=fl_a2
     amostra_paci2.to_csv('modelo_logistic.csv')
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=logistic.predict_proba(x_test)
@@ -118,17 +123,19 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2):
     print(pd.crosstab(fl, logistic.predict(X)))
     print(classification_report(fl, logistic.predict(X)))
     print('AUC: %0.2f' % roc_auc_score(fl,yhat))
-    plot_roc_curve(fl,yhat)
-#esteve_hospitalizado_quantos_dias_7D,esteve_hospitalizado_quantos_dias_14D,laboratorio_hemograma_hematocrito,laboratorio_hemograma_hemoglobina
-#tot_sinais_de_alarme,fl_sexo,idade
+    plot_roc_curve(fl,yhat,nome)
 
-def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3):
+def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome):
     Complement=ComplementNB()
     Complement.fit(x_train,y_train)
     pred=Complement.predict_proba(x_train)
     amostra_=Complement.predict_proba(amostra_paci3)
+    amostra_2=Complement.predict(amostra_paci3)
+    amostra_paci3['result']=0
     amostra_paci3['probls']=0
     amostra_paci3['probls']=amostra_
+    amostra_paci3['result']=amostra_2
+    amostra_paci3['fl_severidade']=fl_a3
     amostra_paci3.to_csv('modelo_complement_bayes.csv')
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=Complement.predict_proba(x_test)
@@ -139,7 +146,44 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3):
     print(pd.crosstab(fl, Complement.predict(X)))
     print(classification_report(fl, Complement.predict(X)))
     print('AUC: %0.2f' % roc_auc_score(fl,yhat))
-    plot_roc_curve(fl,yhat)
+    plot_roc_curve(fl,yhat,nome)
+
+def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
+    arvore = DecisionTreeClassifier()
+   # Treinando o modelo de arvore de decisão:
+    arvore_treinada = arvore.fit(x_train,y_train)
+    for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
+      print("{}:{}".format(feature, importancia))
+    resultado= arvore_treinada.predict(x_test)
+    x_test['result'] = arvore_treinada.predict(x_test)
+    x_test['fl']=y_test
+    print(metrics.classification_report(y_test,resultado))
+    #tree.plot_tree(arvore_treinada) 
+
+    amostra_=arvore_treinada.predict_proba(amostra_paci4)
+    amostra_2=arvore_treinada.predict(amostra_paci4)
+    
+    yhat = arvore_treinada.predict_proba(X)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(fl, arvore_treinada.predict(X)))
+    print(classification_report(fl, arvore_treinada.predict(X)))
+    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
+    plot_roc_curve(fl,yhat,nome)
+
+    amostra_paci4['result']=0
+    amostra_paci4['probls']=0
+    amostra_paci4['probls']=amostra_
+    amostra_paci4['result']=amostra_2
+    amostra_paci4['fl_severidade']=fl_a4
+    amostra_paci4.to_csv('modelo_arvore.csv')
+
+    fig = plt.figure(figsize=(45,40))
+    tree.plot_tree(arvore_treinada, 
+                   feature_names=x_train.columns,  
+                   class_names='fl_severidade',
+                   filled=True)
+    fig.savefig("decistion_tree.png")
+    
 ### Definição de paramentros iniciais para o tratamento de dados
 ### Selecionando as informações presentes em arquivos .csv
 ### De modo a cruzar com outros arquivos para unificar,
@@ -1156,6 +1200,11 @@ amostra_paci2=amostra_paci.copy()
 amostra_paci3=amostra_paci.copy()
 amostra_paci4=amostra_paci.copy()
 
+fl_a1=amostra_paci[['fl_severidade']]
+fl_a2=amostra_paci2[['fl_severidade']]
+fl_a3=amostra_paci3[['fl_severidade']]
+fl_a4=amostra_paci4[['fl_severidade']]
+
 corelacao=amostra_paci.corr(method ='spearman')
 from sklearn.metrics import roc_auc_score
 corelacao.to_csv('correlation_dados.csv')
@@ -1167,27 +1216,15 @@ fl=amostra_paci['fl_severidade']
 amostra_paci.drop(['fl_severidade'],axis=1,inplace=True) 
 amostra_paci2.drop(['fl_severidade'],axis=1,inplace=True) 
 amostra_paci3.drop(['fl_severidade'],axis=1,inplace=True) 
+amostra_paci4.drop(['fl_severidade'],axis=1,inplace=True) 
 y_train=y_train.fillna(0) 
 y_test=y_test.fillna(0) 
 print('Modelo Logistica')
-print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci2))
+print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci2,fl_a2,nome='log'))
 print('')
 print('Modelo Bayes Complement')
-print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci3))
-
-
-arvore = DecisionTreeClassifier()
-# Treinando o modelo de arvore de decisão:
-arvore_treinada = arvore.fit(x_train,y_train)
-for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
-    print("{}:{}".format(feature, importancia))
-resultado = arvore_treinada.predict(x_test)
-print(metrics.classification_report(y_test,resultado))
-tree.plot_tree(arvore_treinada) 
-
-fig = plt.figure(figsize=(45,40))
-tree.plot_tree(arvore_treinada, 
-                   feature_names=x_train.columns,  
-                   class_names='fl_severidade',
-                   filled=True)
-fig.savefig("decistion_tree.png")
+print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci3,fl_a3,nome='bayes'))
+print('')
+print('Modelo arvore')
+print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci4,fl_a4,nome='arvor'))
+print('')
