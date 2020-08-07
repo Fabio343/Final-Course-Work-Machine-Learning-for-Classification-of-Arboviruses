@@ -111,8 +111,20 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     logistic=LogisticRegression(random_state=44)
     logistic.fit(x_train,y_train)
     pred=logistic.predict_proba(x_train)
-    for feature,importancia in zip(x_train.columns,logistic.coef_[0]):
+    
+    coefs = np.abs(logistic.coef_[0])
+    indices = np.argsort(coefs)[::-1]
+    for feature,importancia in zip(x_train.columns,coefs[indices[:]]):
       print("{}:{}".format(feature, importancia))
+     
+    plt.figure()
+    plt.title("Feature importances (Logistic Regression)")
+    plt.bar(range(len(x_train.columns)),coefs[indices[:]],
+       color="r", align="center")
+    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=45, ha='right')
+    plt.subplots_adjust(bottom=0.3)
+    plt.show()
+
     amostra_=logistic.predict_proba(amostra_paci2)
     amostra_2=logistic.predict(amostra_paci2)
     amostra_paci2['result']=0
@@ -136,8 +148,12 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
 def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome):
     Complement=ComplementNB()
     Complement.fit(x_train,y_train)
-    for feature,importancia in zip(x_train.columns,Complement.feature_log_prob_):
-      print("{}:{}".format(feature, importancia))
+    
+    important_features= pd.DataFrame(data=np.transpose(Complement.fit(x_train, y_train).feature_log_prob_).astype("float32"),index=x_train.columns)
+    print(important_features)
+    #important_features.to_csv('modelo_complement_bayes_importance.csv')
+    #for feature,importancia in zip(x_train.columns,Complement.feature_log_prob_):
+    #  print("{}:{}".format(feature, importancia))
     pred=Complement.predict_proba(x_train)
     amostra_=Complement.predict_proba(amostra_paci3)
     amostra_2=Complement.predict(amostra_paci3)
@@ -162,8 +178,20 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     arvore = DecisionTreeClassifier()
    # Treinando o modelo de arvore de decisão:
     arvore_treinada = arvore.fit(x_train,y_train)
+    
+    coefs = arvore_treinada.feature_importances_
+    indices = np.argsort(coefs)[::-1]
     for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
       print("{}:{}".format(feature, importancia))
+        
+    plt.figure()
+    plt.title("Feature importances (Arvore)")
+    plt.bar(range(len(x_train.columns)), coefs[indices[:]],
+       color="r", align="center")
+    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=45, ha='right')
+    plt.subplots_adjust(bottom=0.3)
+    plt.show()
+    
     resultado= arvore_treinada.predict(x_test)
     x_test['result'] = arvore_treinada.predict(x_test)
     x_test['fl']=y_test
@@ -344,7 +372,7 @@ Y = amostra_paci['fl_severidade'].values
 # feature extraction
 model = LogisticRegression()
 #rfe = RFE(model, len(amostra_paci[variaveis_features].columns))
-rfe = RFE(model,30)
+rfe = RFE(model,len(X.columns))
 fit = rfe.fit(X, Y)
 print("Numero de  Features: %d" % fit.n_features_)
 print("Features selecionadas: %s" % fit.support_)
