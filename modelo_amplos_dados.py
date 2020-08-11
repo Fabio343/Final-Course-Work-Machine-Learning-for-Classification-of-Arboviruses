@@ -60,6 +60,9 @@ from sklearn.tree import DecisionTreeClassifier, export_graphviz
 import pydot
 import graphviz
 from sklearn import tree
+from sklearn import preprocessing
+from sklearn.naive_bayes import GaussianNB
+from sklearn.feature_extraction.text import CountVectorizer
 
 
 
@@ -117,14 +120,15 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     for feature,importancia in zip(x_train.columns,coefs[indices[:]]):
       print("{}:{}".format(feature, importancia))
      
-    plt.figure()
-    plt.title("Feature importances (Logistic Regression)")
+    plt.figure(figsize=(20,20))
+    plt.title("Feature importances (Logistica)")
     plt.bar(range(len(x_train.columns)),coefs[indices[:]],
        color="r", align="center")
-    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=45, ha='right')
-    plt.subplots_adjust(bottom=0.3)
+    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=50, ha='right')
+    plt.subplots_adjust(bottom=0.1)
+    plt.savefig("logistica_feature_importance.png")
     plt.show()
-
+    print(coefs[indices[:]],x_train.columns[indices[:]])
     amostra_=logistic.predict_proba(amostra_paci2)
     amostra_2=logistic.predict(amostra_paci2)
     amostra_paci2['result']=0
@@ -132,7 +136,7 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     amostra_paci2['probls']=amostra_
     amostra_paci2['result']=amostra_2
     amostra_paci2['fl_severidade']=fl_a2
-    amostra_paci2.to_csv('modelo_logistic_novo.csv')
+    amostra_paci2.to_csv('modelo_logistic.csv')
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=logistic.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
@@ -146,14 +150,14 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     plot_roc_curve(fl,yhat,nome)
 
 def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome):
+    x_train = preprocessing.normalize(x_train)
+    x_test = preprocessing.normalize(x_test)
+    
+    #y_train = preprocessing.normalize(y_train)
+    #y_test = preprocessing.normalize(y_test)
     Complement=ComplementNB()
     Complement.fit(x_train,y_train)
-    
-    important_features= pd.DataFrame(data=np.transpose(Complement.fit(x_train, y_train).feature_log_prob_).astype("float32"),index=x_train.columns)
-    print(important_features)
-    #important_features.to_csv('modelo_complement_bayes_importance.csv')
-    #for feature,importancia in zip(x_train.columns,Complement.feature_log_prob_):
-    #  print("{}:{}".format(feature, importancia))
+    print(Complement.fit(x_train, y_train).feature_log_prob_)
     pred=Complement.predict_proba(x_train)
     amostra_=Complement.predict_proba(amostra_paci3)
     amostra_2=Complement.predict(amostra_paci3)
@@ -162,7 +166,7 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome
     amostra_paci3['probls']=amostra_
     amostra_paci3['result']=amostra_2
     amostra_paci3['fl_severidade']=fl_a3
-    amostra_paci3.to_csv('modelo_complement_bayes_novo.csv')
+    amostra_paci3.to_csv('modelo_complement_bayes.csv')
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=Complement.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
@@ -184,19 +188,20 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
       print("{}:{}".format(feature, importancia))
         
-    plt.figure()
+    plt.figure(figsize=(20,20))
     plt.title("Feature importances (Arvore)")
     plt.bar(range(len(x_train.columns)), coefs[indices[:]],
        color="r", align="center")
-    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=45, ha='right')
-    plt.subplots_adjust(bottom=0.3)
+    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=50, ha='right')
+    plt.subplots_adjust(bottom=0.1)
+    plt.savefig("arvore_feature_importance.png")
     plt.show()
-    
+    print(coefs[indices[:]],x_train.columns[indices[:]])
     resultado= arvore_treinada.predict(x_test)
     x_test['result'] = arvore_treinada.predict(x_test)
     x_test['fl']=y_test
     print(metrics.classification_report(y_test,resultado))
-    #tree.plot_tree(arvore_treinada) 
+    tree.plot_tree(arvore_treinada) 
 
     amostra_=arvore_treinada.predict_proba(amostra_paci4)
     amostra_2=arvore_treinada.predict(amostra_paci4)
@@ -213,7 +218,7 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     amostra_paci4['probls']=amostra_
     amostra_paci4['result']=amostra_2
     amostra_paci4['fl_severidade']=fl_a4
-    amostra_paci4.to_csv('modelo_arvore_novo.csv')
+    amostra_paci4.to_csv('modelo_arvore.csv')
 
     fig = plt.figure(figsize=(45,40))
     tree.plot_tree(arvore_treinada, 
@@ -286,9 +291,19 @@ base_unificada5.to_csv('base2.csv')
 #Marcando a flag para a modelagem considerando 1 todos os casos severos e 0
 #casos não severos 
 
+
 base_unificada5['fl_severidade'] = 0
-base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==3.0)] = 1
+base_unificada5['age_crianca'] = 0
+#base_unificada5['age_adolecente'] = 0
+#base_unificada5['age_adulto'] = 0
+base_unificada5['age_idoso'] = 0
 base_unificada5['fl_sexo'] = 0
+
+base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==3.0)] = 1
+base_unificada5['age_crianca'][(base_unificada5['age']<=11)] = 1
+base_unificada5['age_adolecente']=[1 if 11<x<=20  else 0 for x in base_unificada5['age']]# [(11<base_unificada5['age']<=20)] = 1
+base_unificada5['age_adulto']=[1 if 20<x<60  else 0 for x in base_unificada5['age']]#[(20<base_unificada5['age']<60)] = 1
+base_unificada5['age_idoso']=[1 if x>=60  else 0 for x in base_unificada5['age']]#[(base_unificada5['age']>=60)] = 1
 base_unificada5['fl_sexo'][(base_unificada5['sexo']=='feminino')] = 1
 base_unificada5_filtrada=base_unificada5
 #import datetime
@@ -315,6 +330,7 @@ base_unificada5_filtrada=base_unificada5
 
 base_unificada5_filtrada.drop('sexo', axis=1, inplace=True)
 base_unificada5_filtrada.drop('CLASSIFICACAO FINAL', axis=1, inplace=True)
+base_unificada5_filtrada.drop('age', axis=1, inplace=True)
 #base_unificada5_filtrada.drop('exam1_agent', axis=1, inplace=True)
 #base_unificada5_filtrada.drop('exam1_resultado_desc', axis=1, inplace=True)
 #base_unificada5_filtrada.drop('exam2_resultado_desc', axis=1, inplace=True)
@@ -351,12 +367,97 @@ base_para_score=base_unificada5_filtrada.copy()
 #base_unificada5_filtrada.drop('level_0', axis=1, inplace=True)
 
 amostra_paci=base_unificada5_filtrada[base_unificada5_filtrada['Subject_ID'].isin(ids['Subject_ID'])].reset_index()
+from sklearn.utils import resample
+amostra_paci_zero=amostra_paci[amostra_paci['fl_severidade']==0]
+amostra_paci_um=amostra_paci[amostra_paci['fl_severidade']==1]
+amostra_paci_um_up=resample(amostra_paci_um,
+                         replace=True,
+                         n_samples=len(amostra_paci_zero),
+                         random_state=123)
+
+amostra_paci=pd.concat([amostra_paci_zero,amostra_paci_um_up])
+print(amostra_paci[amostra_paci['fl_severidade']==0].count())
 
 amostra_paci_21=amostra_paci.copy()
 amostra_paci_31=amostra_paci.copy()
 amostra_paci.drop('Subject_ID', axis=1, inplace=True)
 #amostra_paci.drop('level_0', axis=1, inplace=True)
 amostra_paci.drop('index', axis=1, inplace=True)
+#amostra_paci_21.columns
+
+for k in amostra_paci.columns:
+   ''' 
+   if k not in ['age_crianca','age_adolecente','age_adulto','age_idoso', 'SAQ_VÃ´mitos persistentes', 'raca_Preta',
+       'sintoma_febre_7dias_Dor nas articulaÃ§Ãµes (juntas)',
+       'SAQ_Muito sono, ideias confusas, fala atrapalhada',
+       'SA_D07_VÃ´mitos com sangue',
+       'SA_D14_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'SAQ_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'sintoma_febre_7dias_Dor de cabeÃ§a', 'raca_Parda',
+       "SA_D07_! 'Sangramento de mucosas (nariz, gengiva, etc) '",
+       'SAQ_Dor intensa e contÃ¬nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       "SA_D14_! 'Muito sono, ideias confusas, fala atrapalhada '",
+       'sintoma_febre_7dias_Dor atrÃ¡s dos olhos',
+       'SA_D07_VÃ´mitos persistentes', 'raca_Branca',
+       'SA_D07_Dor intensa e contÃ¬nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       'sintoma_febre_7dias_Dor muscular (costas, coxas, panturrilhas, braÃ§os)',
+       'fl_sexo',
+       'SA_D07_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'SAQ_Queda abrupta de plaquetas',
+       "SA_D07_! 'Muito sono, ideias confusas, fala atrapalhada '",
+       'SA_D07_Manchas vermelhas na pele','edema_Sim',
+       'SAQ_Sangramento de mucosas (nariz, gengiva, etc)',
+       'sinais_artrite_Sim', 
+       'ja_teve_dengue_NÃ£o que eu saiba', 'sintoma_febre_7dias_Conjuntivite',
+       'sintoma_febre_7dias_Sinais de artrite (inflamaÃ§Ã£o nas articulaÃ§Ãµes)',
+       'sintoma_febre_7dias_Manchas na pele',
+      'esteve_hospitalizado_D07_Sim',
+       'esteve_hospitalizado_agravamento_dengue_D07_Sim',
+       'sintoma_febre_7dias_InchaÃ§o', 'exantema_Sim', 'sangramento_Sim',
+       'SA_D14_Dor intensa e contÃ¬nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       'febre_7dias_Sim', 'SA_D14_VÃ´mitos com sangue',
+       'SA_D14_Fluxo de sangue persistente e volumoso pelo Ãºtero',
+       'SA_D14_Sangramento na urina ou fezes',
+       "SA_D14_!' Sangramento de mucosas (nariz, gengiva, etc) '",
+       'ja_teve_dengue_Sim, confirmada por exame de sangue do tipo sorologia',
+      'SA_D14_Manchas vermelhas na pele',
+       'ja_teve_dengue_Sim, por diagnÃ³stico do mÃ©dico',
+       'SA_D07_Fluxo de sangue persistente e volumoso pelo Ãºtero',
+       'SA_D07_Sangramento na urina ou fezes',
+       'SA_D14_VÃ´mitos persistentes','fl_severidade']:'''
+   
+   if k not in ['SAQ_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'esteve_hospitalizado_D07_NÃ£o',
+       'sintoma_febre_7dias_Dor atrÃ¡s dos olhos',
+       'sintoma_febre_7dias_Dor de cabeÃ§a',
+       'SA_D14_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'SAQ_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       'SA_D07_VÃ´mitos persistentes', 'age_adulto',
+       'outros_sinais_alarme_Sem registro',
+       'tem_alguma_doenca_das_articulacoes_NÃ£o',
+       'esteve_hospitalizado_agravamento_dengue_D14_NÃ£o sabe',
+       'SAQ_Queda abrupta de plaquetas',
+       'SAQ_Muito sono, ideias confusas, fala atrapalhada',
+       'SAQ_VÃ´mitos persistentes', 'raca_Parda',
+       'sintoma_febre_7dias_Dor nas articulaÃ§Ãµes (juntas)', 'age_idoso',
+       'age_crianca',
+       'sintoma_febre_7dias_Dor muscular (costas, coxas, panturrilhas, braÃ§os)',
+       "SA_D14_! 'Muito sono, ideias confusas, fala atrapalhada '",
+       'SA_D14_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       'sintoma_febre_7dias_InchaÃ§o', 'SA_D07_Manchas vermelhas na pele',
+       'SA_D07_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'raca_Preta', 'ja_teve_zika_NÃ£o que eu saiba',
+       'ja_teve_dengue_NÃ£o que eu saiba', 'esteve_hospitalizado_D07_Sim',
+       'ja_teve_dengue_Sim, por diagnÃ³stico do mÃ©dico',
+       'SA_D14_VÃ´mitos persistentes', 'SA_D07_Sem sinais',
+       'SA_D07_VÃ´mitos com sangue',
+       'SA_D07_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       "SA_D07_! 'Sangramento de mucosas (nariz, gengiva, etc) '",
+       'SA_D07_Sangramento na urina ou fezes', 'exantema_NÃ£o',
+       "SA_D14_! 'Sangramento de mucosas (nariz, gengiva, etc) '", 'fl_sexo',
+       "SA_D07_! 'Muito sono, ideias confusas, fala atrapalhada '",
+       'raca_Branca', 'SA_D14_Sem sinais', 'sangramento_Sim','fl_severidade']:
+       amostra_paci.drop(k, axis=1, inplace=True)
 
 amostra_paci=category2(amostra_paci,C)
 len(amostra_paci.columns)
@@ -372,7 +473,7 @@ Y = amostra_paci['fl_severidade'].values
 # feature extraction
 model = LogisticRegression()
 #rfe = RFE(model, len(amostra_paci[variaveis_features].columns))
-rfe = RFE(model,len(X.columns))
+rfe = RFE(model,len(variaveis_features))
 fit = rfe.fit(X, Y)
 print("Numero de  Features: %d" % fit.n_features_)
 print("Features selecionadas: %s" % fit.support_)
