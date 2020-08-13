@@ -49,6 +49,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 import category_encoders as ce   # version 1.2.8
 from sklearn.metrics import roc_auc_score
 from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegressionCV
 from sklearn.naive_bayes import ComplementNB
 from sklearn.feature_selection import RFE
 from sklearn.decomposition import PCA
@@ -111,7 +112,7 @@ def var_drop(df,colum):
   return colunas  
 
 def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
-    logistic=LogisticRegression(random_state=44)
+    logistic=LogisticRegressionCV(cv=5, random_state=44)
     logistic.fit(x_train,y_train)
     pred=logistic.predict_proba(x_train)
     
@@ -142,6 +143,21 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
     #print(logistic.coef_)
     #print(logistic.predict_proba(X))
+    
+    yhat = logistic.predict_proba(x_train)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_train, logistic.predict(x_train)))
+    print(classification_report(y_train, logistic.predict(x_train)))
+    print('AUC: %0.2f' % roc_auc_score(y_train,yhat))
+    plot_roc_curve(y_train,yhat,'logist_train')
+    
+    yhat = logistic.predict_proba(x_test)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_test, logistic.predict(x_test)))
+    print(classification_report(y_test, logistic.predict(x_test)))
+    print('AUC: %0.2f' % roc_auc_score(y_test,yhat))
+    plot_roc_curve(y_test,yhat,'logist_test')
+        
     yhat = logistic.predict_proba(X)
     yhat = yhat[:, 1] 
     print(pd.crosstab(fl, logistic.predict(X)))
@@ -171,6 +187,21 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome
     pred_2=Complement.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
     #print(Complement.predict_proba(X))
+    
+    yhat = Complement.predict_proba(x_train)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_train, Complement.predict(x_train)))
+    print(classification_report(y_train, Complement.predict(x_train)))
+    print('AUC: %0.2f' % roc_auc_score(y_train,yhat))
+    plot_roc_curve(y_train,yhat,'naive_train')
+
+    yhat = Complement.predict_proba(x_test)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_test, Complement.predict(x_test)))
+    print(classification_report(y_test, Complement.predict(x_test)))
+    print('AUC: %0.2f' % roc_auc_score(y_test,yhat))
+    plot_roc_curve(y_test,yhat,'naive_test')
+        
     yhat = Complement.predict_proba(X)
     yhat = yhat[:, 1] 
     print(pd.crosstab(fl, Complement.predict(X)))
@@ -179,10 +210,19 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome
     plot_roc_curve(fl,yhat,nome)
 
 def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
-    arvore = DecisionTreeClassifier()
+    #arvore = DecisionTreeClassifier()
+    parameters = {'max_depth':range(3,20)}
+    arvore=GridSearchCV(DecisionTreeClassifier(),parameters, n_jobs=4)
+    #print(arvore_treinada.best_params_)
    # Treinando o modelo de arvore de decisão:
     arvore_treinada = arvore.fit(x_train,y_train)
-    
+    print(arvore_treinada.best_params_.values())
+    AAA=list(arvore_treinada.best_params_.values())
+    print(AAA)
+    print()
+    print(AAA[-1])
+    arvore=DecisionTreeClassifier(max_depth=(14))
+    arvore_treinada = arvore.fit(x_train,y_train)
     coefs = arvore_treinada.feature_importances_
     indices = np.argsort(coefs)[::-1]
     for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
@@ -198,11 +238,24 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     plt.show()
     print(coefs[indices[:]],x_train.columns[indices[:]])
     resultado= arvore_treinada.predict(x_test)
-    x_test['result'] = arvore_treinada.predict(x_test)
-    x_test['fl']=y_test
-    print(metrics.classification_report(y_test,resultado))
+    
+    #x_test['result'] = arvore_treinada.predict(x_test)
+    #x_test['fl']=y_test
+    
+    print(pd.crosstab(y_train, arvore_treinada.predict(x_train)))
+    print(metrics.classification_report(y_train,arvore_treinada.predict(x_train)))
     tree.plot_tree(arvore_treinada) 
-
+    yhat = arvore_treinada.predict_proba(x_train)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_train,yhat,'avore_train')
+    
+    print(pd.crosstab(y_test, arvore_treinada.predict(x_test)))
+    print(metrics.classification_report(y_test,arvore_treinada.predict(x_test)))
+    tree.plot_tree(arvore_treinada) 
+    yhat = arvore_treinada.predict_proba(x_test)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_test,yhat,'avore_test')
+    
     amostra_=arvore_treinada.predict_proba(amostra_paci4)
     amostra_2=arvore_treinada.predict(amostra_paci4)
     
@@ -220,13 +273,71 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     amostra_paci4['fl_severidade']=fl_a4
     amostra_paci4.to_csv('modelo_arvore.csv')
 
-    fig = plt.figure(figsize=(45,40))
+    fig = plt.figure(figsize=(40,40))
     tree.plot_tree(arvore_treinada, 
                    feature_names=x_train.columns,  
                    class_names='fl_severidade',
                    filled=True)
     fig.savefig("decistion_tree.png")
+
+def random_f(x_train,x_test,y_train,y_test,X,fl,amostra_pac5,fl_a5,nome):
+    tuned_parameters = [{'n_estimators': [100,125,150,175,200,225,250,300],'max_depth': [4,5,6,7,8],'n_jobs':[3,4,5,6]}]
+    arvore= GridSearchCV(RandomForestClassifier(), tuned_parameters, cv= 4, scoring='roc_auc')
+    print('Melhores parametros')
     
+    arvore_treinada = arvore.fit(x_train,y_train)
+    AAA=list(arvore_treinada.best_params_.values())
+    print(AAA)
+    print()
+    print(AAA[:])
+    
+    arvore=RandomForestClassifier(max_depth=AAA[0],n_estimators=AAA[1])
+    arvore_treinada = arvore.fit(x_train,y_train)
+    
+    coefs = arvore_treinada.feature_importances_
+    indices = np.argsort(coefs)[::-1]
+    for feature,importancia in zip(amostra_paci5.columns,arvore_treinada.feature_importances_):
+      print("{}:{}".format(feature, importancia))
+        
+    plt.figure(figsize=(20,20))
+    plt.title("Feature importances (Random)")
+    plt.bar(range(len(x_train.columns)), coefs[indices[:]],
+       color="r", align="center")
+    plt.xticks(range(len(x_train.columns)),x_train.columns[indices[:]], rotation=50, ha='right')
+    plt.subplots_adjust(bottom=0.1)
+    plt.savefig("random_feature_importance.png")
+    plt.show()
+    print(coefs[indices[:]],x_train.columns[indices[:]])
+    resultado= arvore_treinada.predict(x_test)
+    
+    print(pd.crosstab(y_train, arvore_treinada.predict(x_train)))
+    print(metrics.classification_report(y_train,arvore_treinada.predict(x_train))) 
+    yhat = arvore_treinada.predict_proba(x_train)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_train,yhat,'random_train')
+    
+    print(pd.crosstab(y_test, arvore_treinada.predict(x_test)))
+    print(metrics.classification_report(y_test,arvore_treinada.predict(x_test)))
+    yhat = arvore_treinada.predict_proba(x_test)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_test,yhat,'random_test')
+    
+    amostra_=arvore_treinada.predict_proba(amostra_paci5)
+    amostra_2=arvore_treinada.predict(amostra_paci5)
+    
+    yhat = arvore_treinada.predict_proba(X)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(fl, arvore_treinada.predict(X)))
+    print(classification_report(fl, arvore_treinada.predict(X)))
+    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
+    plot_roc_curve(fl,yhat,nome)
+
+    amostra_paci5['result']=0
+    amostra_paci5['probls']=0
+    amostra_paci5['probls']=amostra_
+    amostra_paci5['result']=amostra_2
+    amostra_paci5['fl_severidade']=fl_a5
+    amostra_paci5.to_csv('modelo_random.csv')
 ### Definição de paramentros iniciais para o tratamento de dados
 ### Selecionando as informações presentes em arquivos .csv
 ### De modo a cruzar com outros arquivos para unificar,
@@ -368,7 +479,7 @@ base_para_score=base_unificada5_filtrada.copy()
 
 amostra_paci=base_unificada5_filtrada[base_unificada5_filtrada['Subject_ID'].isin(ids['Subject_ID'])].reset_index()
 from sklearn.utils import resample
-amostra_paci_zero=amostra_paci[amostra_paci['fl_severidade']==0]
+'''amostra_paci_zero=amostra_paci[amostra_paci['fl_severidade']==0]
 amostra_paci_um=amostra_paci[amostra_paci['fl_severidade']==1]
 amostra_paci_um_up=resample(amostra_paci_um,
                          replace=True,
@@ -377,7 +488,7 @@ amostra_paci_um_up=resample(amostra_paci_um,
 
 amostra_paci=pd.concat([amostra_paci_zero,amostra_paci_um_up])
 print(amostra_paci[amostra_paci['fl_severidade']==0].count())
-
+'''
 amostra_paci_21=amostra_paci.copy()
 amostra_paci_31=amostra_paci.copy()
 amostra_paci.drop('Subject_ID', axis=1, inplace=True)
@@ -386,77 +497,39 @@ amostra_paci.drop('index', axis=1, inplace=True)
 #amostra_paci_21.columns
 
 for k in amostra_paci.columns:
-   ''' 
-   if k not in ['age_crianca','age_adolecente','age_adulto','age_idoso', 'SAQ_VÃ´mitos persistentes', 'raca_Preta',
-       'sintoma_febre_7dias_Dor nas articulaÃ§Ãµes (juntas)',
-       'SAQ_Muito sono, ideias confusas, fala atrapalhada',
-       'SA_D07_VÃ´mitos com sangue',
-       'SA_D14_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
-       'SAQ_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
-       'sintoma_febre_7dias_Dor de cabeÃ§a', 'raca_Parda',
-       "SA_D07_! 'Sangramento de mucosas (nariz, gengiva, etc) '",
-       'SAQ_Dor intensa e contÃ¬nua no abdome (barriga), espontÃ¢nea ou ao apertar',
-       "SA_D14_! 'Muito sono, ideias confusas, fala atrapalhada '",
-       'sintoma_febre_7dias_Dor atrÃ¡s dos olhos',
-       'SA_D07_VÃ´mitos persistentes', 'raca_Branca',
-       'SA_D07_Dor intensa e contÃ¬nua no abdome (barriga), espontÃ¢nea ou ao apertar',
-       'sintoma_febre_7dias_Dor muscular (costas, coxas, panturrilhas, braÃ§os)',
-       'fl_sexo',
-       'SA_D07_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
-       'SAQ_Queda abrupta de plaquetas',
-       "SA_D07_! 'Muito sono, ideias confusas, fala atrapalhada '",
-       'SA_D07_Manchas vermelhas na pele','edema_Sim',
-       'SAQ_Sangramento de mucosas (nariz, gengiva, etc)',
-       'sinais_artrite_Sim', 
-       'ja_teve_dengue_NÃ£o que eu saiba', 'sintoma_febre_7dias_Conjuntivite',
-       'sintoma_febre_7dias_Sinais de artrite (inflamaÃ§Ã£o nas articulaÃ§Ãµes)',
-       'sintoma_febre_7dias_Manchas na pele',
-      'esteve_hospitalizado_D07_Sim',
-       'esteve_hospitalizado_agravamento_dengue_D07_Sim',
-       'sintoma_febre_7dias_InchaÃ§o', 'exantema_Sim', 'sangramento_Sim',
-       'SA_D14_Dor intensa e contÃ¬nua no abdome (barriga), espontÃ¢nea ou ao apertar',
-       'febre_7dias_Sim', 'SA_D14_VÃ´mitos com sangue',
-       'SA_D14_Fluxo de sangue persistente e volumoso pelo Ãºtero',
-       'SA_D14_Sangramento na urina ou fezes',
-       "SA_D14_!' Sangramento de mucosas (nariz, gengiva, etc) '",
-       'ja_teve_dengue_Sim, confirmada por exame de sangue do tipo sorologia',
-      'SA_D14_Manchas vermelhas na pele',
-       'ja_teve_dengue_Sim, por diagnÃ³stico do mÃ©dico',
-       'SA_D07_Fluxo de sangue persistente e volumoso pelo Ãºtero',
-       'SA_D07_Sangramento na urina ou fezes',
-       'SA_D14_VÃ´mitos persistentes','fl_severidade']:'''
    
+     
    if k not in ['SAQ_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
        'esteve_hospitalizado_D07_NÃ£o',
-       'sintoma_febre_7dias_Dor atrÃ¡s dos olhos',
-       'sintoma_febre_7dias_Dor de cabeÃ§a',
-       'SA_D14_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
-       'SAQ_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
-       'SA_D07_VÃ´mitos persistentes', 'age_adulto',
-       'outros_sinais_alarme_Sem registro',
        'tem_alguma_doenca_das_articulacoes_NÃ£o',
-       'esteve_hospitalizado_agravamento_dengue_D14_NÃ£o sabe',
-       'SAQ_Queda abrupta de plaquetas',
-       'SAQ_Muito sono, ideias confusas, fala atrapalhada',
-       'SAQ_VÃ´mitos persistentes', 'raca_Parda',
-       'sintoma_febre_7dias_Dor nas articulaÃ§Ãµes (juntas)', 'age_idoso',
-       'age_crianca',
-       'sintoma_febre_7dias_Dor muscular (costas, coxas, panturrilhas, braÃ§os)',
-       "SA_D14_! 'Muito sono, ideias confusas, fala atrapalhada '",
-       'SA_D14_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
-       'sintoma_febre_7dias_InchaÃ§o', 'SA_D07_Manchas vermelhas na pele',
        'SA_D07_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
-       'raca_Preta', 'ja_teve_zika_NÃ£o que eu saiba',
-       'ja_teve_dengue_NÃ£o que eu saiba', 'esteve_hospitalizado_D07_Sim',
-       'ja_teve_dengue_Sim, por diagnÃ³stico do mÃ©dico',
-       'SA_D14_VÃ´mitos persistentes', 'SA_D07_Sem sinais',
-       'SA_D07_VÃ´mitos com sangue',
+       'SAQ_Muito sono, ideias confusas, fala atrapalhada',
+       'SA_D07_Sangramento na urina ou fezes', 'fl_sexo',
+       'sintoma_febre_7dias_Dor atrÃ¡s dos olhos',
+       'outros_sinais_alarme_Sem registro',
+       'esteve_hospitalizado_agravamento_dengue_D14_NÃ£o sabe',
+       'sintoma_febre_7dias_Dor de cabeÃ§a',
        'SA_D07_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
-       "SA_D07_! 'Sangramento de mucosas (nariz, gengiva, etc) '",
-       'SA_D07_Sangramento na urina ou fezes', 'exantema_NÃ£o',
-       "SA_D14_! 'Sangramento de mucosas (nariz, gengiva, etc) '", 'fl_sexo',
+       'sintoma_febre_7dias_Dor muscular (costas, coxas, panturrilhas, braÃ§os)',
+       'SAQ_Queda abrupta de plaquetas',
+       'SA_D14_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       'age_crianca', 'SAQ_VÃ´mitos persistentes',
+       'ja_teve_zika_NÃ£o que eu saiba', 'sangramento_Sim', 'exantema_NÃ£o',
+       'sintoma_febre_7dias_Dor nas articulaÃ§Ãµes (juntas)',
        "SA_D07_! 'Muito sono, ideias confusas, fala atrapalhada '",
-       'raca_Branca', 'SA_D14_Sem sinais', 'sangramento_Sim','fl_severidade']:
+       'age_adulto', 'raca_Branca', 'age_idoso', 'outros_sinais_alarme_NÃ£o',
+       'SA_D07_Manchas vermelhas na pele', 'SA_D14_Manchas vermelhas na pele',
+       'esteve_hospitalizado_agravamento_dengue_D07_NÃ£o sabe', 'raca_Parda',
+       'ja_teve_dengue_NÃ£o que eu saiba',
+       'SA_D14_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
+       'sangramento_NÃ£o', 'SA_D14_Sem sinais',
+       'ja_teve_dengue_Sim, por diagnÃ³stico do mÃ©dico',
+       "SA_D07_! 'Sangramento de mucosas (nariz, gengiva, etc) '",
+       'SAQ_Sangramento de mucosas (nariz, gengiva, etc)',
+       'SA_D07_VÃ´mitos persistentes', 'esteve_hospitalizado_D14_NÃ£o',
+       'SA_D07_VÃ´mitos com sangue',
+       'SAQ_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
+       'sintoma_febre_7dias_Manchas na pele','fl_severidade']:
        amostra_paci.drop(k, axis=1, inplace=True)
 
 amostra_paci=category2(amostra_paci,C)
@@ -504,7 +577,34 @@ print(amos)
 #print("Explained Variance: %s" % fit.explained_variance_ratio_)
 #print(fit.components_)
 #print('')
-x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5,random_state=0)
+x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.3,random_state=0)
+x_train.columns
+x_train['fl_severidade']=y_train
+x_train_zero=x_train[x_train['fl_severidade']==0]
+x_train_um=x_train[x_train['fl_severidade']==1]
+x_train_um_up=resample(x_train_um,
+                         replace=True,
+                         n_samples=len(x_train_zero),
+                         random_state=123)
+
+x_train=pd.concat([x_train_zero,x_train_um_up])
+print(x_train[x_train['fl_severidade']==0].count())
+y_train=x_train['fl_severidade']
+x_train.drop('fl_severidade',axis=1)
+'''
+x_test['fl_severidade']=y_test
+x_test_zero=x_test[x_test['fl_severidade']==0]
+x_test_um=x_test[x_test['fl_severidade']==1]
+x_test_zero_down=resample(x_test_zero,
+                         replace=True,
+                         n_samples=len(x_test_um),
+                         random_state=123)
+
+x_test=pd.concat([x_test_zero_down,x_test_um])
+print(x_test[x_test['fl_severidade']==0].count())
+y_test=x_test['fl_severidade']
+x_test.drop('fl_severidade',axis=1)
+'''
 test=y_test.sum()
 print(test)
 #while test<40 or test>25:
@@ -534,11 +634,13 @@ pickle_lista.close()
 amostra_paci2=amostra_paci.copy()
 amostra_paci3=amostra_paci.copy()
 amostra_paci4=amostra_paci.copy()
+amostra_paci5=amostra_paci.copy()
 
 fl_a1=amostra_paci[['fl_severidade']]
 fl_a2=amostra_paci2[['fl_severidade']]
 fl_a3=amostra_paci3[['fl_severidade']]
 fl_a4=amostra_paci4[['fl_severidade']]
+fl_a5=amostra_paci5[['fl_severidade']]
 
 corelacao=amostra_paci.corr(method ='spearman')
 from sklearn.metrics import roc_auc_score
@@ -551,13 +653,12 @@ fl=amostra_paci['fl_severidade']
 amostra_paci.drop(['fl_severidade'],axis=1,inplace=True) 
 amostra_paci2.drop(['fl_severidade'],axis=1,inplace=True) 
 amostra_paci3.drop(['fl_severidade'],axis=1,inplace=True) 
-amostra_paci4.drop(['fl_severidade'],axis=1,inplace=True) 
+amostra_paci4.drop(['fl_severidade'],axis=1,inplace=True)
+amostra_paci5.drop(['fl_severidade'],axis=1,inplace=True) 
 y_train=y_train.fillna(0) 
 y_test=y_test.fillna(0) 
 
 print('Modelo Logistica')
-#logistic=LogisticRegression(random_state=44)
-#logistic.fit(x_train,y_train)
 print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci2,fl_a2,nome='log'))
 print('')
 print('')
@@ -568,3 +669,5 @@ print('')
 print('Modelo arvore')
 print(arvore_dec(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci4,fl_a4,nome='arvor'))
 print('')
+print('Modelo Random Forest')
+print(random_f(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci5,fl_a5,nome='random'))
