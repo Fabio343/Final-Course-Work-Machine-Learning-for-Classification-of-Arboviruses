@@ -120,8 +120,7 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     indices = np.argsort(coefs)[::-1]
     for feature,importancia in zip(x_train.columns,coefs[indices[:]]):
       print("{}:{}".format(feature, importancia))
-     
-    plt.figure(figsize=(20,20))
+    plt.figure(figsize=(15,15))
     plt.title("Feature importances (Logistica)")
     plt.bar(range(len(x_train.columns)),coefs[indices[:]],
        color="r", align="center")
@@ -141,36 +140,68 @@ def logistic(x_train,x_test,y_train,y_test,X,fl,amostra_paci2,fl_a2,nome):
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=logistic.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
-    #print(logistic.coef_)
-    #print(logistic.predict_proba(X))
-    
     yhat = logistic.predict_proba(x_train)
     yhat = yhat[:, 1] 
     print(pd.crosstab(y_train, logistic.predict(x_train)))
     print(classification_report(y_train, logistic.predict(x_train)))
     print('AUC: %0.2f' % roc_auc_score(y_train,yhat))
-    plot_roc_curve(y_train,yhat,'logist_train')
-    
+    plot_roc_curve(y_train,yhat,'logist_train')   
     yhat = logistic.predict_proba(x_test)
     yhat = yhat[:, 1] 
     print(pd.crosstab(y_test, logistic.predict(x_test)))
     print(classification_report(y_test, logistic.predict(x_test)))
     print('AUC: %0.2f' % roc_auc_score(y_test,yhat))
     plot_roc_curve(y_test,yhat,'logist_test')
-        
-    yhat = logistic.predict_proba(X)
-    yhat = yhat[:, 1] 
-    print(pd.crosstab(fl, logistic.predict(X)))
-    print(classification_report(fl, logistic.predict(X)))
-    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
-    plot_roc_curve(fl,yhat,nome)
-
-def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome):
-    x_train = preprocessing.normalize(x_train)
-    x_test = preprocessing.normalize(x_test)
     
-    #y_train = preprocessing.normalize(y_train)
-    #y_test = preprocessing.normalize(y_test)
+def logistic_1(x_test,y_test,x_train_1,y_train_1,X,fl,amostra_paci2,fl_a2,nome):    
+    print('verificação com down em treino')
+    print()
+    logistic=LogisticRegressionCV(cv=5, random_state=44)
+    logistic.fit(x_train_1,y_train_1)
+    pred=logistic.predict_proba(x_train_1)
+    coefs = np.abs(logistic.coef_[0])
+    indices = np.argsort(coefs)[::-1]
+    for feature,importancia in zip(x_train_1.columns,coefs[indices[:]]):
+      print("{}:{}".format(feature, importancia))
+    plt.figure(figsize=(15,15))
+    plt.title("Feature importances (Logistica)")
+    plt.bar(range(len(x_train_1.columns)),coefs[indices[:]],
+       color="r", align="center")
+    plt.xticks(range(len(x_train_1.columns)),x_train_1.columns[indices[:]], rotation=50, ha='right')
+    plt.subplots_adjust(bottom=0.1)
+    plt.savefig("logistica_feature_importance_1.png")
+    plt.show()
+    print(coefs[indices[:]],x_train_1.columns[indices[:]])
+    amostra_=logistic.predict_proba(amostra_paci2)
+    amostra_2=logistic.predict(amostra_paci2)
+    amostra_paci2['result']=0
+    amostra_paci2['probls']=0
+    amostra_paci2['probls']=amostra_
+    amostra_paci2['result']=amostra_2
+    amostra_paci2['fl_severidade']=fl_a2
+    amostra_paci2.to_csv('modelo_logistic_1.csv')
+    print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train_1,pred[:,1])))
+    pred_2=logistic.predict_proba(x_test)
+    print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))    
+    yhat = logistic.predict_proba(x_train_1)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_train_1, logistic.predict(x_train_1)))
+    print(classification_report(y_train_1, logistic.predict(x_train_1)))
+    print('AUC: %0.2f' % roc_auc_score(y_train_1,yhat))
+    plot_roc_curve(y_train_1,yhat,'logist_train_1')
+    yhat = logistic.predict_proba(x_test)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_test, logistic.predict(x_test)))
+    print(classification_report(y_test, logistic.predict(x_test)))
+    print('AUC: %0.2f' % roc_auc_score(y_test,yhat))
+    plot_roc_curve(y_test,yhat,'logist_test_1')
+
+def complement_bayes(x_train,x_test,y_train,y_test,x_train_1,y_train_1,X,fl,amostra_paci3,fl_a3,nome):
+    amostra_paci3_n=amostra_paci3.copy()
+    x_train = preprocessing.normalize(x_train)
+    x_train_1 = preprocessing.normalize(x_train_1)
+    x_test = preprocessing.normalize(x_test)
+
     Complement=ComplementNB()
     Complement.fit(x_train,y_train)
     print(Complement.fit(x_train, y_train).feature_log_prob_)
@@ -186,15 +217,12 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome
     print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train,pred[:,1])))
     pred_2=Complement.predict_proba(x_test)
     print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
-    #print(Complement.predict_proba(X))
-    
     yhat = Complement.predict_proba(x_train)
     yhat = yhat[:, 1] 
     print(pd.crosstab(y_train, Complement.predict(x_train)))
     print(classification_report(y_train, Complement.predict(x_train)))
     print('AUC: %0.2f' % roc_auc_score(y_train,yhat))
     plot_roc_curve(y_train,yhat,'naive_train')
-
     yhat = Complement.predict_proba(x_test)
     yhat = yhat[:, 1] 
     print(pd.crosstab(y_test, Complement.predict(x_test)))
@@ -202,21 +230,40 @@ def complement_bayes(x_train,x_test,y_train,y_test,X,fl,amostra_paci3,fl_a3,nome
     print('AUC: %0.2f' % roc_auc_score(y_test,yhat))
     plot_roc_curve(y_test,yhat,'naive_test')
         
-    yhat = Complement.predict_proba(X)
+    print('verificação com down em treino')
+    print()
+    Complement=ComplementNB()
+    Complement.fit(x_train_1,y_train_1)
+    print(Complement.fit(x_train_1, y_train_1).feature_log_prob_)
+    pred=Complement.predict_proba(x_train_1)
+    amostra_=Complement.predict_proba(amostra_paci3_n)
+    amostra_2=Complement.predict(amostra_paci3_n)
+    amostra_paci3_n['result']=0
+    amostra_paci3_n['probls']=0
+    amostra_paci3_n['probls']=amostra_
+    amostra_paci3_n['result']=amostra_2
+    amostra_paci3_n['fl_severidade']=fl_a3
+    amostra_paci3_n.to_csv('modelo_complement_bayes_1.csv')
+    print('Treinamento AUC-ROC:{}'.format(roc_auc_score(y_train_1,pred[:,1])))
+    pred_2=Complement.predict_proba(x_test)
+    print('Validacao AUC-ROC:{}'.format(roc_auc_score(y_test,pred_2[:,1])))
+    yhat = Complement.predict_proba(x_train_1)
     yhat = yhat[:, 1] 
-    print(pd.crosstab(fl, Complement.predict(X)))
-    print(classification_report(fl, Complement.predict(X)))
-    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
-    plot_roc_curve(fl,yhat,nome)
+    print(pd.crosstab(y_train_1, Complement.predict(x_train_1)))
+    print(classification_report(y_train_1, Complement.predict(x_train_1)))
+    print('AUC: %0.2f' % roc_auc_score(y_train_1,yhat))
+    plot_roc_curve(y_train_1,yhat,'naive_train_1')
+    yhat = Complement.predict_proba(x_test)
+    yhat = yhat[:, 1] 
+    print(pd.crosstab(y_test, Complement.predict(x_test)))
+    print(classification_report(y_test, Complement.predict(x_test)))
+    print('AUC: %0.2f' % roc_auc_score(y_test,yhat))
+    plot_roc_curve(y_test,yhat,'naive_test_1')
 
 def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
-    #arvore = DecisionTreeClassifier()
     parameters = {'max_depth':range(3,20)}
     arvore=GridSearchCV(DecisionTreeClassifier(),parameters, n_jobs=4)
-    #print(arvore_treinada.best_params_)
-   # Treinando o modelo de arvore de decisão:
     arvore_treinada = arvore.fit(x_train,y_train)
-    print(arvore_treinada.best_params_.values())
     AAA=list(arvore_treinada.best_params_.values())
     print(AAA)
     print()
@@ -228,7 +275,7 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
       print("{}:{}".format(feature, importancia))
         
-    plt.figure(figsize=(20,20))
+    plt.figure(figsize=(15,15))
     plt.title("Feature importances (Arvore)")
     plt.bar(range(len(x_train.columns)), coefs[indices[:]],
        color="r", align="center")
@@ -238,68 +285,100 @@ def arvore_dec(x_train,x_test,y_train,y_test,X,fl,amostra_paci4,fl_a4,nome):
     plt.show()
     print(coefs[indices[:]],x_train.columns[indices[:]])
     resultado= arvore_treinada.predict(x_test)
-    
-    #x_test['result'] = arvore_treinada.predict(x_test)
-    #x_test['fl']=y_test
-    
     print(pd.crosstab(y_train, arvore_treinada.predict(x_train)))
     print(metrics.classification_report(y_train,arvore_treinada.predict(x_train)))
-    tree.plot_tree(arvore_treinada) 
     yhat = arvore_treinada.predict_proba(x_train)
     yhat = yhat[:, 1]
     plot_roc_curve(y_train,yhat,'avore_train')
-    
     print(pd.crosstab(y_test, arvore_treinada.predict(x_test)))
     print(metrics.classification_report(y_test,arvore_treinada.predict(x_test)))
-    tree.plot_tree(arvore_treinada) 
     yhat = arvore_treinada.predict_proba(x_test)
     yhat = yhat[:, 1]
     plot_roc_curve(y_test,yhat,'avore_test')
-    
     amostra_=arvore_treinada.predict_proba(amostra_paci4)
     amostra_2=arvore_treinada.predict(amostra_paci4)
-    
-    yhat = arvore_treinada.predict_proba(X)
-    yhat = yhat[:, 1] 
-    print(pd.crosstab(fl, arvore_treinada.predict(X)))
-    print(classification_report(fl, arvore_treinada.predict(X)))
-    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
-    plot_roc_curve(fl,yhat,nome)
-
     amostra_paci4['result']=0
     amostra_paci4['probls']=0
     amostra_paci4['probls']=amostra_
     amostra_paci4['result']=amostra_2
     amostra_paci4['fl_severidade']=fl_a4
     amostra_paci4.to_csv('modelo_arvore.csv')
-
-    fig = plt.figure(figsize=(40,40))
+    fig = plt.figure(figsize=(25,25))
     tree.plot_tree(arvore_treinada, 
                    feature_names=x_train.columns,  
                    class_names='fl_severidade',
                    filled=True)
     fig.savefig("decistion_tree.png")
+ 
+def arvore_dec1(x_test,y_test,x_train_1,y_train_1,X,fl,amostra_paci4,fl_a4,nome):    
+    print('verificação com down em treino')
+    print()
+    parameters = {'max_depth':range(3,20)}
+    arvore=GridSearchCV(DecisionTreeClassifier(),parameters, n_jobs=4)
+    arvore_treinada = arvore.fit(x_train_1,y_train_1)
+    AAA=list(arvore_treinada.best_params_.values())
+    print(AAA)
+    print()
+    print(AAA[-1])
+    arvore=DecisionTreeClassifier(max_depth=(14))
+    arvore_treinada = arvore.fit(x_train_1,y_train_1)
+    coefs = arvore_treinada.feature_importances_
+    indices = np.argsort(coefs)[::-1]
+    for feature,importancia in zip(amostra_paci4.columns,arvore_treinada.feature_importances_):
+      print("{}:{}".format(feature, importancia))
+        
+    plt.figure(figsize=(15,15))
+    plt.title("Feature importances (Arvore)")
+    plt.bar(range(len(x_train_1.columns)), coefs[indices[:]],
+       color="r", align="center")
+    plt.xticks(range(len(x_train_1.columns)),x_train_1.columns[indices[:]], rotation=50, ha='right')
+    plt.subplots_adjust(bottom=0.1)
+    plt.savefig("arvore_feature_importance_1.png")
+    plt.show()
+    print(coefs[indices[:]],x_train_1.columns[indices[:]])
+    resultado= arvore_treinada.predict(x_test)
+    print(pd.crosstab(y_train_1, arvore_treinada.predict(x_train_1)))
+    print(metrics.classification_report(y_train_1,arvore_treinada.predict(x_train_1)))
+    yhat = arvore_treinada.predict_proba(x_train_1)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_train_1,yhat,'avore_train_1')
+    print(pd.crosstab(y_test, arvore_treinada.predict(x_test)))
+    print(metrics.classification_report(y_test,arvore_treinada.predict(x_test)))
+    yhat = arvore_treinada.predict_proba(x_test)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_test,yhat,'avore_test_1')
+    amostra_=arvore_treinada.predict_proba(amostra_paci4)
+    amostra_2=arvore_treinada.predict(amostra_paci4)
+    amostra_paci4['result']=0
+    amostra_paci4['probls']=0
+    amostra_paci4['probls']=amostra_
+    amostra_paci4['result']=amostra_2
+    amostra_paci4['fl_severidade']=fl_a4
+    amostra_paci4.to_csv('modelo_arvore_1.csv')
+    fig = plt.figure(figsize=(25,25))
+    tree.plot_tree(arvore_treinada, 
+                   feature_names=x_train_1.columns,  
+                   class_names='fl_severidade',
+                   filled=True)
+    fig.savefig("decistion_tree_1.png")
 
 def random_f(x_train,x_test,y_train,y_test,X,fl,amostra_pac5,fl_a5,nome):
     tuned_parameters = [{'n_estimators': [100,125,150,175,200,225,250,300],'max_depth': [4,5,6,7,8],'n_jobs':[3,4,5,6]}]
     arvore= GridSearchCV(RandomForestClassifier(), tuned_parameters, cv= 4, scoring='roc_auc')
     print('Melhores parametros')
-    
     arvore_treinada = arvore.fit(x_train,y_train)
     AAA=list(arvore_treinada.best_params_.values())
     print(AAA)
     print()
     print(AAA[:])
-    
     arvore=RandomForestClassifier(max_depth=AAA[0],n_estimators=AAA[1])
     arvore_treinada = arvore.fit(x_train,y_train)
-    
     coefs = arvore_treinada.feature_importances_
     indices = np.argsort(coefs)[::-1]
     for feature,importancia in zip(amostra_paci5.columns,arvore_treinada.feature_importances_):
       print("{}:{}".format(feature, importancia))
         
-    plt.figure(figsize=(20,20))
+    plt.figure(figsize=(15,15))
     plt.title("Feature importances (Random)")
     plt.bar(range(len(x_train.columns)), coefs[indices[:]],
        color="r", align="center")
@@ -309,39 +388,72 @@ def random_f(x_train,x_test,y_train,y_test,X,fl,amostra_pac5,fl_a5,nome):
     plt.show()
     print(coefs[indices[:]],x_train.columns[indices[:]])
     resultado= arvore_treinada.predict(x_test)
-    
     print(pd.crosstab(y_train, arvore_treinada.predict(x_train)))
     print(metrics.classification_report(y_train,arvore_treinada.predict(x_train))) 
     yhat = arvore_treinada.predict_proba(x_train)
     yhat = yhat[:, 1]
     plot_roc_curve(y_train,yhat,'random_train')
-    
     print(pd.crosstab(y_test, arvore_treinada.predict(x_test)))
     print(metrics.classification_report(y_test,arvore_treinada.predict(x_test)))
     yhat = arvore_treinada.predict_proba(x_test)
     yhat = yhat[:, 1]
     plot_roc_curve(y_test,yhat,'random_test')
-    
     amostra_=arvore_treinada.predict_proba(amostra_paci5)
     amostra_2=arvore_treinada.predict(amostra_paci5)
-    
-    yhat = arvore_treinada.predict_proba(X)
-    yhat = yhat[:, 1] 
-    print(pd.crosstab(fl, arvore_treinada.predict(X)))
-    print(classification_report(fl, arvore_treinada.predict(X)))
-    print('AUC: %0.2f' % roc_auc_score(fl,yhat))
-    plot_roc_curve(fl,yhat,nome)
-
     amostra_paci5['result']=0
     amostra_paci5['probls']=0
     amostra_paci5['probls']=amostra_
     amostra_paci5['result']=amostra_2
     amostra_paci5['fl_severidade']=fl_a5
     amostra_paci5.to_csv('modelo_random.csv')
-### Definição de paramentros iniciais para o tratamento de dados
-### Selecionando as informações presentes em arquivos .csv
-### De modo a cruzar com outros arquivos para unificar,
-### Em um unico dataframe os dados facilitando na manipulação.
+    
+def random_f1(x_test,y_test,x_train_1,y_train_1,X,fl,amostra_paci5,fl_a5,nome):    
+    print('verificação com down em treino')
+    print()
+    tuned_parameters = [{'n_estimators': [100,125,150,175,200,225,250,300],'max_depth': [4,5,6,7,8],'n_jobs':[3,4,5,6]}]
+    arvore= GridSearchCV(RandomForestClassifier(), tuned_parameters, cv= 4, scoring='roc_auc')
+    print('Melhores parametros')
+    arvore_treinada = arvore.fit(x_train_1,y_train_1)
+    AAA=list(arvore_treinada.best_params_.values())
+    print(AAA)
+    print()
+    print(AAA[:])
+    arvore=RandomForestClassifier(max_depth=AAA[0],n_estimators=AAA[1])
+    arvore_treinada = arvore.fit(x_train_1,y_train_1)
+    coefs = arvore_treinada.feature_importances_
+    indices = np.argsort(coefs)[::-1]
+    for feature,importancia in zip(amostra_paci5.columns,arvore_treinada.feature_importances_):
+      print("{}:{}".format(feature, importancia))
+        
+    plt.figure(figsize=(15,15))
+    plt.title("Feature importances (Random)")
+    plt.bar(range(len(x_train_1.columns)), coefs[indices[:]],
+       color="r", align="center")
+    plt.xticks(range(len(x_train_1.columns)),x_train_1.columns[indices[:]], rotation=50, ha='right')
+    plt.subplots_adjust(bottom=0.1)
+    plt.savefig("random_feature_importance_1.png")
+    plt.show()
+    print(coefs[indices[:]],x_train_1.columns[indices[:]])
+    resultado= arvore_treinada.predict(x_test)
+    print(pd.crosstab(y_train_1, arvore_treinada.predict(x_train_1)))
+    print(metrics.classification_report(y_train_1,arvore_treinada.predict(x_train_1))) 
+    yhat = arvore_treinada.predict_proba(x_train_1)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_train_1,yhat,'random_train_1')
+    print(pd.crosstab(y_test, arvore_treinada.predict(x_test)))
+    print(metrics.classification_report(y_test,arvore_treinada.predict(x_test)))
+    yhat = arvore_treinada.predict_proba(x_test)
+    yhat = yhat[:, 1]
+    plot_roc_curve(y_test,yhat,'random_test_1')
+    amostra_=arvore_treinada.predict_proba(amostra_paci5)
+    amostra_2=arvore_treinada.predict(amostra_paci5)
+    amostra_paci5['result']=0
+    amostra_paci5['probls']=0
+    amostra_paci5['probls']=amostra_
+    amostra_paci5['result']=amostra_2
+    amostra_paci5['fl_severidade']=fl_a5
+    amostra_paci5.to_csv('modelo_random_1.csv')
+
 
 base_unificada5=pd.read_excel('var_nov_tcc.xlsx',sep=';',error_bad_lines=False)
 base_=pd.read_excel('Levantamento_clinico_PALMAS_ARBOBIOS_2019.xlsx',sep=';',error_bad_lines=False)
@@ -375,11 +487,6 @@ base_unificada5.to_csv('variavesi.csv')
 
 base_unificada5.to_csv('base1.csv')
 
-# processo que usamos para separar variaveis com mais de 1 informação
-# dentro de uma mesma celula da base 
-# com essa separação podemos criar flags para cada sintoma
-# deixando mais claro o impacto de cada sintoma no 
-# processo final 
 variaveis_dummy_2=[]
 for k in ['febre_7dias','sangramento','raca','ja_teve_dengue','ja_teve_chikungunya','ja_teve_zika','tem_alguma_doenca_das_articulacoes',	
 'exantema','edema','sinais_artrite','outros_sinais_alarme','esteve_hospitalizado_D07','esteve_hospitalizado_agravamento_dengue_D07','esteve_hospitalizado_D14',	
@@ -399,56 +506,22 @@ for k in ['febre_7dias','sangramento','raca','ja_teve_dengue','ja_teve_chikungun
 base_unificada5.reset_index()
 base_unificada5.to_csv('base2.csv')
 
-#Marcando a flag para a modelagem considerando 1 todos os casos severos e 0
-#casos não severos 
-
-
 base_unificada5['fl_severidade'] = 0
 base_unificada5['age_crianca'] = 0
-#base_unificada5['age_adolecente'] = 0
-#base_unificada5['age_adulto'] = 0
 base_unificada5['age_idoso'] = 0
 base_unificada5['fl_sexo'] = 0
 
 base_unificada5['fl_severidade'][(base_unificada5['CLASSIFICACAO FINAL']==3.0)] = 1
 base_unificada5['age_crianca'][(base_unificada5['age']<=11)] = 1
-base_unificada5['age_adolecente']=[1 if 11<x<=20  else 0 for x in base_unificada5['age']]# [(11<base_unificada5['age']<=20)] = 1
-base_unificada5['age_adulto']=[1 if 20<x<60  else 0 for x in base_unificada5['age']]#[(20<base_unificada5['age']<60)] = 1
-base_unificada5['age_idoso']=[1 if x>=60  else 0 for x in base_unificada5['age']]#[(base_unificada5['age']>=60)] = 1
+base_unificada5['age_adolecente']=[1 if 11<x<=20  else 0 for x in base_unificada5['age']]
+base_unificada5['age_adulto']=[1 if 20<x<60  else 0 for x in base_unificada5['age']]
+base_unificada5['age_idoso']=[1 if x>=60  else 0 for x in base_unificada5['age']]
 base_unificada5['fl_sexo'][(base_unificada5['sexo']=='feminino')] = 1
 base_unificada5_filtrada=base_unificada5
-#import datetime
-#base_unificada5['DOB']=pd.to_datetime(base_unificada5['DOB'],errors='coerce').replace(np.nan,datetime.datetime.now())
-#base_unificada5['febre_7dias_quando']=pd.to_datetime(base_unificada5['febre_7dias_quando'],errors='coerce').replace(np.nan,datetime.datetime.now())
-
-#base_unificada5=base_unificada5.reset_index()
-#base_unificada5['idade'] = 0
-#for L in range(len(base_unificada5['DOB'])):
-#     difff=base_unificada5['febre_7dias_quando'][L]-base_unificada5['DOB'][L]
-#     base_unificada5['idade'][L]=int((difff.days + difff.seconds/86400)/365.2425)
- 
-#Filtrando apenas os pacientes com dengue as demais
-#aborviroses serão trabalhadas em outra etapa do processo
-#base_unificada5_filtrada=base_unificada5[base_unificada5['exam1_agent'] =='DENV'].reset_index()
-#base_unificada5_filtrada=base_unificada5_filtrada[(base_unificada5_filtrada['exam1_resultado_desc'] =='Reactive') | (base_unificada5_filtrada['exam2_resultado_desc'] =='Reactive') | (base_unificada5_filtrada['exam3_resultado_desc'] =='Reactive') | (base_unificada5_filtrada['exam4_resultado_desc'] =='Reactive') | (base_unificada5_filtrada['exam5_resultado_desc'] =='Reactive') | (base_unificada5_filtrada['exam6_resultado_desc'] =='Reactive')].reset_index()
-
-#Relizando a conversão de valores string para numericos
-#Com o objetivo de simplificar a aplicação nas tecnicas de modelagem
-#A alteração é dada com base na frequencia em relação com a resposta inicial desejada
-#Ou seja inicialmente definimos pacientes com casos graves.
-#Apos marcação realizamos um tipo de replace no qual 
-#alteramos todos os campos com a nova marcação e salvamos os arquivos em formato pickle
 
 base_unificada5_filtrada.drop('sexo', axis=1, inplace=True)
 base_unificada5_filtrada.drop('CLASSIFICACAO FINAL', axis=1, inplace=True)
 base_unificada5_filtrada.drop('age', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam1_agent', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam1_resultado_desc', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam2_resultado_desc', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam3_resultado_desc', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam4_resultado_desc', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam5_resultado_desc', axis=1, inplace=True)
-#base_unificada5_filtrada.drop('exam6_resultado_desc', axis=1, inplace=True)
 
 C=base_unificada5_filtrada.select_dtypes(include=['object'])
 base_unificada5_filtrada.to_csv('base3.csv')
@@ -470,13 +543,7 @@ base_unificada5_filtrada[C.columns]=base_unificada5_filtrada[C.columns].fillna('
 base_unificada5_filtrada=base_unificada5_filtrada.fillna(0.0)   
 base_unificada5_filtrada.to_csv('base_total.csv')
 
-#Selecionando amostra para modelagem após os tratamentos 
-#Realizados em todos os dados
-# E separando em treino e teste
 base_para_score=base_unificada5_filtrada.copy()
-#amostra_paci =base_unificada5_filtrada.copy() #.sample(frac=0.7, replace=False)
-#base_unificada5_filtrada.drop('level_0', axis=1, inplace=True)
-
 amostra_paci=base_unificada5_filtrada[base_unificada5_filtrada['Subject_ID'].isin(ids['Subject_ID'])].reset_index()
 from sklearn.utils import resample
 '''amostra_paci_zero=amostra_paci[amostra_paci['fl_severidade']==0]
@@ -492,13 +559,10 @@ print(amostra_paci[amostra_paci['fl_severidade']==0].count())
 amostra_paci_21=amostra_paci.copy()
 amostra_paci_31=amostra_paci.copy()
 amostra_paci.drop('Subject_ID', axis=1, inplace=True)
-#amostra_paci.drop('level_0', axis=1, inplace=True)
 amostra_paci.drop('index', axis=1, inplace=True)
-#amostra_paci_21.columns
 
+'''
 for k in amostra_paci.columns:
-   
-     
    if k not in ['SAQ_PressÃ£o baixa, escurecimento da vista, sudorese ou desmaio ao se levantar',
        'esteve_hospitalizado_D07_NÃ£o',
        'tem_alguma_doenca_das_articulacoes_NÃ£o',
@@ -531,7 +595,7 @@ for k in amostra_paci.columns:
        'SAQ_Dor intensa e contÃ­nua no abdome (barriga), espontÃ¢nea ou ao apertar',
        'sintoma_febre_7dias_Manchas na pele','fl_severidade']:
        amostra_paci.drop(k, axis=1, inplace=True)
-
+'''
 amostra_paci=category2(amostra_paci,C)
 len(amostra_paci.columns)
 amostra_paci=amostra_paci.fillna(0.0) 
@@ -543,9 +607,7 @@ for k in amostra_paci.columns:
 
 X = amostra_paci[variaveis_features].values
 Y = amostra_paci['fl_severidade'].values
-# feature extraction
 model = LogisticRegression()
-#rfe = RFE(model, len(amostra_paci[variaveis_features].columns))
 rfe = RFE(model,len(variaveis_features))
 fit = rfe.fit(X, Y)
 print("Numero de  Features: %d" % fit.n_features_)
@@ -569,16 +631,12 @@ for L in drops_feature:
        
 amos=amostra_paci['fl_severidade'].sum()
 print(amos)
-  
-#variaveis_features
-#pca = PCA(n_components=30)
-#fit = pca.fit(X)
-# summarize components
-#print("Explained Variance: %s" % fit.explained_variance_ratio_)
-#print(fit.components_)
-#print('')
+
 x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.3,random_state=0)
+x_train_1=x_train.copy()
+y_train_1=y_train.copy()
 x_train.columns
+
 x_train['fl_severidade']=y_train
 x_train_zero=x_train[x_train['fl_severidade']==0]
 x_train_um=x_train[x_train['fl_severidade']==1]
@@ -586,30 +644,23 @@ x_train_um_up=resample(x_train_um,
                          replace=True,
                          n_samples=len(x_train_zero),
                          random_state=123)
-
 x_train=pd.concat([x_train_zero,x_train_um_up])
 print(x_train[x_train['fl_severidade']==0].count())
 y_train=x_train['fl_severidade']
 x_train.drop('fl_severidade',axis=1)
-'''
-x_test['fl_severidade']=y_test
-x_test_zero=x_test[x_test['fl_severidade']==0]
-x_test_um=x_test[x_test['fl_severidade']==1]
-x_test_zero_down=resample(x_test_zero,
-                         replace=True,
-                         n_samples=len(x_test_um),
-                         random_state=123)
 
-x_test=pd.concat([x_test_zero_down,x_test_um])
-print(x_test[x_test['fl_severidade']==0].count())
-y_test=x_test['fl_severidade']
-x_test.drop('fl_severidade',axis=1)
-'''
-test=y_test.sum()
-print(test)
-#while test<40 or test>25:
-#    x_train,x_test,y_train,y_test=train_test_split(amostra_paci,amostra_paci['fl_severidade'],test_size=0.5)
-#    test=y_test.sum()
+
+x_train_1['fl_severidade']=y_train_1
+x_train_zero=x_train_1[x_train_1['fl_severidade']==0]
+x_train_um=x_train_1[x_train_1['fl_severidade']==1]
+x_train_zero_down=resample(x_train_zero,
+                         replace=True,
+                         n_samples=len(x_train_um),
+                         random_state=123)
+x_train_1=pd.concat([x_train_zero_down,x_train_um])
+print(x_train_1[x_train_1['fl_severidade']==0].count())
+y_train_1=x_train_1['fl_severidade']
+x_train_1.drop('fl_severidade',axis=1)
 
 #################################################################
 #LIMPEZA DE VARIAVEIS CONSTANTES
@@ -646,8 +697,10 @@ corelacao=amostra_paci.corr(method ='spearman')
 from sklearn.metrics import roc_auc_score
 corelacao.to_csv('correlation_dados.csv')
 x_train=x_train.fillna(0) 
+x_train_1=x_train_1.fillna(0) 
 x_test=x_test.fillna(0)
 x_train.drop(['fl_severidade'],axis=1,inplace=True)
+x_train_1.drop(['fl_severidade'],axis=1,inplace=True)
 x_test.drop(['fl_severidade'],axis=1,inplace=True)
 fl=amostra_paci['fl_severidade']
 amostra_paci.drop(['fl_severidade'],axis=1,inplace=True) 
@@ -655,19 +708,34 @@ amostra_paci2.drop(['fl_severidade'],axis=1,inplace=True)
 amostra_paci3.drop(['fl_severidade'],axis=1,inplace=True) 
 amostra_paci4.drop(['fl_severidade'],axis=1,inplace=True)
 amostra_paci5.drop(['fl_severidade'],axis=1,inplace=True) 
-y_train=y_train.fillna(0) 
-y_test=y_test.fillna(0) 
+y_train=y_train.fillna(0)
+y_train_1=y_train_1.fillna(0) 
+y_test=y_test.fillna(0)
 
+amostra_paci2a=amostra_paci2.copy()
+amostra_paci3a=amostra_paci3.copy()
+amostra_paci4a=amostra_paci4.copy()
+amostra_paci5a=amostra_paci5.copy()
 print('Modelo Logistica')
 print(logistic(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci2,fl_a2,nome='log'))
 print('')
 print('')
+print('Modelo Logistica Down')
+print(logistic_1(x_test,y_test,x_train_1,y_train_1,amostra_paci,fl,amostra_paci2a,fl_a2,nome='log'))
+print('')
+print('')
 print('Modelo Bayes Complement')
-print(complement_bayes(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci3,fl_a3,nome='bayes'))
+print(complement_bayes(x_train,x_test,y_train,y_test,x_train_1,y_train_1,amostra_paci,fl,amostra_paci3,fl_a3,nome='bayes'))
 print('')
 print('')
 print('Modelo arvore')
 print(arvore_dec(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci4,fl_a4,nome='arvor'))
 print('')
+print('Modelo arvore Down')
+print(arvore_dec1(x_test,y_test,x_train_1,y_train_1,amostra_paci,fl,amostra_paci4a,fl_a4,nome='arvor'))
+print('')
 print('Modelo Random Forest')
 print(random_f(x_train,x_test,y_train,y_test,amostra_paci,fl,amostra_paci5,fl_a5,nome='random'))
+print('')
+print('Modelo Random Forest Down')
+print(random_f1(x_test,y_test,x_train_1,y_train_1,amostra_paci,fl,amostra_paci5a,fl_a5,nome='random'))
