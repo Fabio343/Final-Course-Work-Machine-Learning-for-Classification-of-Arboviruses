@@ -4,11 +4,11 @@ The project aims to develop a Machine Learning template in Python to classify fe
 
 The results of this development will be used to write a monograph to be submitted to the Department of Applied Mathematics of the Institute of Mathematics and Statistics at USP as a requirement for completion of the Bachelor's degree in Applied and Computational Mathematics with a specialization in Physiology and Biophysics.
 
-Advisor: Dr. Helder Takashi Imoto Nakaya
+**Advisor: Dr. Helder Takashi Imoto Nakaya**
 
-Department of Clinical and Toxicological Analysis, School of Pharmaceutical Sciences, USP.
+_Department of Clinical and Toxicological Analysis, School of Pharmaceutical Sciences, USP._
 
-Co-Advisor: Dr. Felipe Ten Caten
+**Co-Advisor: Dr. Felipe Ten Caten**
 
-Department of Infectious and Parasitic Diseases, School of Medicine, USP.
+_Department of Infectious and Parasitic Diseases, School of Medicine, USP._
 
